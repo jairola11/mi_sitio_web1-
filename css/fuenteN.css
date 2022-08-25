@@ -1,5 +1,5 @@
 body{
-   background-color: rgba(177, 89, 225, 0.9);
+   background-color: rgba(24, 24, 24,.9);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -8,5 +8,5 @@ body{
 h1{
     font-family: 'Bebas Neue', cursive;
     font-size: 10em;
-    color: aliceblue;
+    color: red;
 }

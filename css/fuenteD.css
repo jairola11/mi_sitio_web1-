@@ -1,3 +1,12 @@
 body{
-    background-color: rgba(94, 28, 235, 0.765);
+    background-color: rgba(148, 104, 242, 0.765);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
  }
+ h1{
+     font-family: 'Bebas Neue', cursive;
+     font-size: 8em;
+     color: aliceblue;
+}

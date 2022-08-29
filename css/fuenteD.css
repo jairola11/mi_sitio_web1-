@@ -3,11 +3,20 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: rgb(0, 42, 255);
  }
  h1{
      font-family: 'waltograph', cursive;
      font-size: 10em;
      font-weight: 600;
+     color: aliceblue;
      
+}
+
+@font-face {
+    font-family:'waltograph';
+    src: url(../fonts/Walter.ttf);
+
+
 }
    

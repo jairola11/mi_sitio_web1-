@@ -3,13 +3,13 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(4, 4, 171);
+    background-color: rgba(4, 4, 124, 0.93);
  }
  h1{
      font-family: 'waltograph', cursive;
      font-size: 10em;
      font-weight: 600;
-     color: aliceblue;
+     color: rgb(253, 254, 255);
      
 }
 

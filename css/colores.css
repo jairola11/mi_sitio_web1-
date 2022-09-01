@@ -1,18 +1,25 @@
-.box-1{
-    display: block;
+.box {
+    text-align: center;
+    display: inline-block;
     height: 300px;
     width: 300px;
-    background-color: rgb(255, 0, 0);
+}
+.box-1{
+    background-color:aquamarine
 }
 .box-2{
-    display: block;
-    height: 300px;
-    width: 300px;
-    background-color: rgb(0,255, 0);
+    background-color:royalblue
 }
 .box-3{
-    display:block;
-    height: 300px;
-    width: 300px;
-    background-color: rgb(0,0, 255);
+    background-color: forestgreen
+}
+
+.box-4{
+    background-color: rgb(255, 0, 0);
+}
+.box-5 {
+    background-color: rgb(0,255, 0);
+}
+.box-6 {
+    background-color:rgb(55, 254, 254);
 }

@@ -12,8 +12,8 @@
 } 
 .box-1{
     
-    border: 5px groove rgb(211, 19, 19);
-    background-color:rgb(14, 105, 105);
+    border: 5px solid rgb(36, 102, 100);
+    background-color:rgb(27, 69, 67);
     margin-bottom: 20px;
     text-align: center;
 
@@ -21,26 +21,26 @@
 .box-2{
     
     border: 5px dashed black;
-    background-color:blueviolet;
+    background-color:rgb(21, 80, 52);
   text-align: justify;
 }
 .box-3{
     
     text-align: justify;
-    border: 5px solid darkcyan;
-    background-color: rgb(3, 80, 54);
+    border: 5px groove black;
+    background-color: rgb(125, 55, 171);
 
 }
 .box-4{
   
     text-align: right;
     border:5px dotted black;
-background-color: rgb(85, 20, 145);
+background-color: rgb(45, 43, 91);
 
 }
 .box-5{
     text-align: left;
     border: 6px Double white;
-    background-color: green;
+    background-color: rgb(32, 35, 52);
    
      }

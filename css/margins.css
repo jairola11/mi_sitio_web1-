@@ -1,45 +1,46 @@
 .box{
     display: inline-block;
     width: 125px;
-    background-color: darkcyan;
-    text-align: center;
+    height: 225px;
+    letter-spacing:-.01em;
+    word-spacing: -.01em;
+    line-height: 1.5em;
+    color: white;
+    margin: 100px 0px 0px 15px ;
+    padding:25px ;
+    text-indent: 1em;
 } 
 .box-1{
-    margin: 20px;
-    border: 5px groove white;
-    padding: 25px;
+    
+    border: 5px groove rgb(211, 19, 19);
     background-color:rgb(14, 105, 105);
     margin-bottom: 20px;
     text-align: center;
+
 }
 .box-2{
-    margin: 10px;
+    
     border: 5px dashed black;
-    padding: 25px;
     background-color:blueviolet;
-  margin-top: 5px;
   text-align: justify;
 }
 .box-3{
-    margin: 10px;
+    
     text-align: justify;
     border: 5px solid darkcyan;
-    background-color: aquamarine;
-    margin-top: 30px;
-    padding: 25px;
-}
-.box-4{
-  margin: 10px;
-    text-align: justify;
-    border:5px dotted black;
-background-color: rgb(85, 20, 145);
-padding: 25px;
-}
-.box-5{
-    margin: 10px;
-    text-align: justify;
-    border: 6px Double white;
-    background-color: green;
-    padding: 25px;
+    background-color: rgb(3, 80, 54);
 
 }
+.box-4{
+  
+    text-align: right;
+    border:5px dotted black;
+background-color: rgb(85, 20, 145);
+
+}
+.box-5{
+    text-align: left;
+    border: 6px Double white;
+    background-color: green;
+   
+     }

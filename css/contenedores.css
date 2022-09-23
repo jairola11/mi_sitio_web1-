@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+*{
+    margin:0 ;
+    padding: 0%;
+}
+body{
+    background-color:aliceblue; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color:rgb(7, 7, 7);
+}
+ul{
+    text-align: center;
+    list-style-type:none ;
+    font-size:1.3em;;
+}
+li{
+    padding: 15px;
+    display: inline-block;
+    font-size: 30px;
+}
+li:hover{
+    
+    color:rgba(241, 239, 234, 0.986);
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.primer{
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(86, 86, 228);
+    margin-left: 780px;
+    box-shadow: 20px 13px 15px rgb(86, 86, 228);
+}
+
+
+.segundo{
+    display: flex;
+}
+.contenedor2{
+    margin: 25px;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: teal;
+    margin-left: 600px;
+    box-shadow: 20px 13px 15px teal;
+}
+.contenedor3{
+    margin: 25px;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(46, 182, 41);
+    margin-left: 50px;
+    box-shadow: 20px 13px 15px rgb(46, 182, 41)
+}
+
+
+.tercero{
+    display: flex;
+}
+.contenedor4{
+    margin: 20px;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(196, 33, 33);
+    margin-left: 450px;
+    box-shadow: 20px 13px 15px rgb(196, 33, 33)
+}
+
+.contenedor5{
+    margin: 20px;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color:rgb(199, 137, 23);
+    margin-left: 50px;
+    box-shadow: 20px 13px 15px rgb(199, 137, 23)
+}
+.contenedor6{
+    margin: 20px;
+    display: flex;
+    width: 260px;
+    height: 260px;
+    background-color: blue;
+    margin-left: 50px;
+    box-shadow: 20px 13px 15px blue
+}

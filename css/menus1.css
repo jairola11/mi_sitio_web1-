@@ -20,8 +20,8 @@ li{
     font-size: 30px;
 }
 li:hover{
-    background-color: rgb(206, 170, 170);
-    color: white;
+    background-color: rgb(146, 58, 58);
+    color: rgb(136, 23, 23);
 
 }
 a{

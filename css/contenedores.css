@@ -28,6 +28,7 @@ li:hover{
     color:rgba(255, 255, 255, 0.986);
 
 }
+
 a{
     color: white;
     text-decoration: none;
@@ -41,6 +42,7 @@ a{
     background-color: rgb(86, 86, 228);
     margin-left: 780px;
     box-shadow: 20px 13px 15px rgb(86, 86, 228);
+    border-radius: 1em;
 }
 
 
@@ -55,6 +57,7 @@ a{
     background-color: teal;
     margin-left: 600px;
     box-shadow: 20px 13px 15px teal;
+    border-radius: 1em;
 }
 .contenedor3{
     margin: 25px;
@@ -63,12 +66,15 @@ a{
     height: 260px;
     background-color: rgb(46, 182, 41);
     margin-left: 50px;
-    box-shadow: 20px 13px 15px rgb(46, 182, 41)
+    box-shadow: 20px 13px 15px rgb(46, 182, 41);
+    border-radius: 1em;
+    
 }
 
 
 .tercero{
     display: flex;
+    
 }
 .contenedor4{
     margin: 20px;
@@ -77,7 +83,8 @@ a{
     height: 260px;
     background-color: rgb(196, 33, 33);
     margin-left: 450px;
-    box-shadow: 20px 13px 15px rgb(196, 33, 33)
+    box-shadow: 20px 13px 15px rgb(196, 33, 33);
+    border-radius: 1em;
 }
 
 .contenedor5{
@@ -87,7 +94,8 @@ a{
     height: 260px;
     background-color:rgb(199, 137, 23);
     margin-left: 50px;
-    box-shadow: 20px 13px 15px rgb(199, 137, 23)
+    box-shadow: 20px 13px 15px rgb(199, 137, 23);
+    border-radius: 1em;
 }
 .contenedor6{
     margin: 20px;
@@ -96,5 +104,6 @@ a{
     height: 260px;
     background-color: blue;
     margin-left: 50px;
-    box-shadow: 20px 13px 15px blue
+    box-shadow: 20px 13px 15px blue;
+    border-radius: 1em;
 }

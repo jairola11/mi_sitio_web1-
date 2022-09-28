@@ -7,11 +7,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 nav{
-    background-color:white;
+    background-color:rgb(252, 244, 244);
 }
 ul{
     text-align: right;
     list-style-type:none ;
+    font-size:1.3em;
 }
 li{
     padding: 2%;
@@ -19,7 +20,11 @@ li{
     font-size: 30px;
 }
 li:hover{
-    background-color: rgb(11, 11, 11);
+    background-color: rgb(206, 170, 170);
     color: white;
 
+}
+a{
+color: black;
+    text-decoration: none;
 }

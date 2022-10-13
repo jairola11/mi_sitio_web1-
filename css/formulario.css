@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    background-color: #282c2e;
+    text-align: center;
+    color: #628799;
+    height: 60px;
+    font-size: 30px;  
+}
+
+.nav li{
+    display: inline-block;
+    margin: 7px 15px;
+}
+
+
+.nav a {
+    color: rgb(128, 122, 189);
+    text-decoration: rgb(207, 204, 200);
+}
+.nav li a:hover {
+    background-color: #434343;
+}
+label{
+    display: block;
+}
+input[type="text"]{
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size:1.2em;
+    width: 400px;
+    border: none;
+border-bottom:  1px solid black;
+}
+input[type="text"]:hover{
+    background-color: rgb(177, 176, 189);
+}
+input[type="text"]:focus{
+    outline: none;
+}

@@ -26,6 +26,7 @@
 }
 label{
     display: block;
+    margin: 10px;
 }
 input[type="text"]{
     margin-bottom: 20px;
@@ -40,4 +41,19 @@ input[type="text"]:hover{
 }
 input[type="text"]:focus{
     outline: none;
+    
+}
+form{
+    margin: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+}
+fieldset{
+    width: 500px;
+}
+input{
+    margin: 7px;
 }

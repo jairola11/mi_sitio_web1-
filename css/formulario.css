@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0;      
 }
 
 .nav {
@@ -27,6 +27,8 @@
 label{
     display: block;
     margin: 10px;
+
+    
 }
 input[type="text"]{
     margin-bottom: 20px;
@@ -35,6 +37,7 @@ input[type="text"]{
     width: 400px;
     border: none;
 border-bottom:  1px solid black;
+cursor: pointer;
 }
 input[type="text"]:hover{
     background-color: rgb(177, 176, 189);
@@ -57,3 +60,21 @@ fieldset{
 input{
     margin: 7px;
 }
+input[type="submit"] {
+    width: 200px;
+    border: 1px rgb(8, 8, 8);
+    background-color: rgb(31, 212, 73);
+    border-radius: 25px;
+    font-size: 18px;
+    color: rgb(39, 36, 36);
+    cursor: pointer;}
+    input:focus{
+        background-color: rgb(232,240,254);
+        outline-color: rgb(129, 129, 129);
+        box-shadow: 2px 2px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
+       }
+       input:active{
+        background-color: rgb(232,240,254);
+        outline-color: rgb(129, 129, 129);
+        box-shadow: 2px 2px 4px rgb(129, 129, 129), -2px -2px 4px rgb(129, 129, 129);
+       }

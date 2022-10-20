@@ -37,6 +37,7 @@ input[type="text"] {
 input[type="text"]:hover {
     background-color: rgb(15, 15, 15);
     transition: .5s;
+
 }
 
 
@@ -53,9 +54,25 @@ fieldset{
 input[type="submit"] {
     height: 50px;
     border: 1px rgb(8, 8, 8);
-    background-color: rgb(63, 198, 95);
+    background-color: rgb(40, 91, 219);
     border-radius: 25px;
     font-size: 18px;
     color: rgb(39, 36, 36);
     cursor: pointer;
 }
+input[type="submit"]:hover{
+    background-color: rgb(21, 76, 164); 
+}
+a:hover{
+    color: rgb(13, 42, 115);
+}
+input:focus{
+    background-color: rgb(2, 3, 2);
+    outline-color: rgb(41, 105, 161);
+    box-shadow: 2px 2px 4px rgb(50, 153, 185), -2px -2px 4px rgb(36, 105, 158);
+    }
+    input:active{
+        background-color: rgb(2, 3, 2);
+        outline-color: rgb(41, 105, 161);
+        box-shadow: 2px 2px 4px rgb(50, 153, 185), -2px -2px 4px rgb(36, 105, 158);
+    }

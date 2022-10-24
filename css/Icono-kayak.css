@@ -11,12 +11,13 @@ nav{
     left: 0;
     width: 220px;
     height: 100vh;
+    cursor: pointer;
 }
 ul{
     list-style: none;
 }
 .icon-style{
-    margin: 10px;
+    margin: 10px; 
 }
 hr{
     width: 210px;

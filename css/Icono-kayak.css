@@ -24,3 +24,14 @@ hr{
     margin: 0 5px 0 5px;
     color: transparent;
 }
+.menu{
+    display: block;
+    padding: 8px;
+}
+.menu:hover{
+background-color: rgb(96, 96,96);
+
+}
+.menu:hover .icon-style{
+color:white;
+}

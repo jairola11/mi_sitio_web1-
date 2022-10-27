@@ -11,7 +11,7 @@ nav{
     left: 0;
     width: 220px;
     height: 100vh;
-    cursor: pointer;
+
 }
 ul{
     list-style: none;
@@ -30,7 +30,8 @@ hr{
 }
 .menu:hover{
 background-color: rgb(96, 96,96);
-
+cursor: pointer;
+color: white;
 }
 .menu:hover .icon-style{
 color:white;

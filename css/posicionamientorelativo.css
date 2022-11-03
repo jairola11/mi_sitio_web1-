@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.posicionamiento{
+    width: 500px;
+    height: 100px;
+    margin: 150px ;
+    border: 1px solid rgb(67, 63, 71)
+}
+.box2{
+    width: 150px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    top: 100%;
+    left: 30px;
+}
+.box3{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: 100%;
+    left: 1px;
+}
+.box4{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(216, 23, 23);
+    position: relative;
+    left: 150px;
+}
+.box5{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(55, 50, 50);
+    position: relative;
+    left: 150px;
+}

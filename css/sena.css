@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-menu{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(rgb(189, 72, 72), 1%, white);
+    box-shadow: 0px 0px 20px rgb(104, 104, 104);
+}
+
+.menu{
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 8px;
+    border-right: 1px solid rgb(202, 123, 77);
+    margin-left: -5px;
+}
+
+.inicio {
+    background-color: rgb(87,87,86);
+    display: inline-block;
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 8px;
+    border-right: 1px solid rgb(173, 98, 55);
+    color: white;
+    font-weight: 1000;
+} 
+
+.menu:hover {
+    cursor: pointer;
+    background-color: rgb(220,220,220);
+    padding: 8px;
+}
+
+.inicio:hover {
+    cursor: pointer;
+    background-color: rgb(61, 61, 61);
+}
+ul{
+    list-style: none; 
+}
+
+a {
+    text-decoration: white;
+    color: rgb(255, 255, 255);
+}
+
+nav{
+    position: absolute;
+    width: 270px;
+    margin: 1px;
+}
+
+.menu2 {
+    background-color: rgb(87,87,86);
+    padding: 12px;
+    margin: 3px;
+    font-size: 0.9em;
+    color: white;
+    border-radius: 5px;
+}
+
+.box:hover{
+    cursor: pointer;
+    background-color: rgb(10, 10, 10);
+}

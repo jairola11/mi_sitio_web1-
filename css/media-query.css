@@ -18,6 +18,12 @@
     list-style: none;
 
 }
+.main-Menu{
+    display: none;
+}
+.main-menu-visible{
+    display: block;
+}
 .bar-menu{
     color: white;
     font-size: 2.4;

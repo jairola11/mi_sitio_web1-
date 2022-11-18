@@ -1,0 +1,57 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+nav {
+    font-size: 1.6em;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+li:hover{
+    background-color:rgb(57, 196, 196);
+}
+    
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: table;
+    position: absolute;
+    width: 100%;
+    background-color:rgb(38, 90, 90);
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    padding: 0 3em;
+    color: white;
+}
+nav > ul > li { 
+    float: left;
+    width: 350px;
+    line-height: 50px;
+
+}
+nav li{
+    position: relative;
+}
+nav li li {
+    max-height: 0;
+    overflow: hidden;
+}
+nav li:hover > ul > li {
+    background-color:rgb(42, 118, 118);
+    visibility: visible;
+    max-height: 500px;
+    overflow: visible;
+}
+.hijo:hover{
+    background-color: rgb(199, 199, 199);
+}
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+}
+li{
+    border: 1px solid rgb(255, 255, 255);
+}

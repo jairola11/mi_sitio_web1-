@@ -1,82 +1,91 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.main-nav{
-    width: 100%;
-    background-color: rgb(7, 7, 7);
-    position: fixed;
-    height: 80px;
-}
-
 .bar-menu{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 2.2em;
-    text-align: right;
     position: fixed;
     visibility: hidden;
-    top: 0;
+    top: 15px;
+    left: 30px;
 }
-.main-menu {
+.main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(147, 153, 153, 0.9);
+    height: 80px;
+}
+.main-menu{
     list-style: none;
-    text-align: right;
 }
 a{
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
-.item-main-menu{
-    display: inline-block;
-    padding: 25px 45px;
+.item-main-menu:hover{
     cursor: pointer;
 }
-.item-main-menu:hover{
-    background-color: rgba(32, 34, 32, 0.9);
-}
-
 p{
-    padding-top: 100px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin: 120px 60px;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.3em;
 }
-@media only screen  and (max-width:1152px) {
-    .item-main-menu{
-        display: block;
-        background-color: rgba(9, 97, 23, 0.9);
-        color: black;
-        text-align: center;
-        position: relative;
-        border-bottom: 1px solid white;
-    }
+.item-main-menu{
+    display: inline-block;
+    margin: 25px 50px;
+    padding: 0 30px;
 
-    .item-main-menu:hover{
-        background-color: rgba(6, 54, 14, 0.9);
+}
+@media only screen and (max-width:1152px) {
+    .main-menu{
+        background-color: rgba(161, 90, 90, 0.9);
+        margin-top: 81px;
+        padding: 0;
+        text-align: center;
+    }
+    .main-nav{
+        height: 80px;;
+    }
+    .main-menu{
+        display: none; 
+    }
+    .main-menu-visible{
+        display: block;
+        background-color: rgba(71, 94, 100, 0.9);
+        margin-top: 81px;
+        padding: 0;
+        margin-bottom: 1px;
+    }
+    .menu-1{
+        width: 100%;
+        display: block;
+        text-align: center;
+        visibility: visible;
+        border-bottom: 1px solid white;
+        line-height: 70px;
+        padding: 0;
     }
     .bar-menu{
         visibility: visible;
-        padding: 25px 45px;
-        padding-bottom: 10px;
-        width: 100%;
-
-
-       }
+        left: 92%;
+    }
     .bar-menu:hover{
         cursor: pointer;
     }
-    .main-menu{
-        margin-top: 81px;
-        display: none;
-    }
-
-    .main-menu-visible {
+    .item-main-menu{
         display: block;
-        margin-top: 81px;
+        color: black;
+        text-align: center;
+        position: relative;
     }
 
- 
 }

@@ -1,67 +1,82 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
-.main-nav{ 
+.main-nav{
     width: 100%;
-    background-color: rgb(49, 48, 45);
-}
-.bar-menu{
-    color: white;
-    font-size: 1.8em;
-    padding: 0.20px;
-    
-}
-.main-menu{
+    background-color: rgb(7, 7, 7);
+    position: fixed;
     height: 80px;
-    list-style: none;
+}
 
-}
-.main-Menu{
-    display: none;
-}
-.main-menu-visible{
-    display: block;
-}
 .bar-menu{
     color: white;
-    font-size: 2.4;
-    display: block;
-    padding: 0 20px;
+    font-size: 2.2em;
+    text-align: right;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
 }
-.href-item{
+.main-menu {
+    list-style: none;
+    text-align: right;
+}
+a{
     display: block;
     color: white;
     text-decoration: none;
     font-size: 1.4em;
 }
-.item-main-menu{
 
+.item-main-menu{
     display: inline-block;
-    padding: 20px 45px;
-}
-li:hover{
+    padding: 25px 45px;
     cursor: pointer;
-    background-color: black;
 }
-@media only screen and (max-width: 1152px){
+.item-main-menu:hover{
+    background-color: rgba(32, 34, 32, 0.9);
+}
+
+p{
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+@media only screen  and (max-width:1152px) {
     .item-main-menu{
-    background-color: rgb(128, 123, 123);
-    visibility: visible;
-    display: block;
-    text-align: center;
-border-bottom: solid white;}
-    .bar-menu{
-        color: white;
-        font-size: 2.4;
         display: block;
-        padding: 0 20px;
+        background-color: rgba(9, 97, 23, 0.9);
+        color: black;
+        text-align: center;
+        position: relative;
+        border-bottom: 1px solid white;
     }
-    .bar-menu:hover:{
+
+    .item-main-menu:hover{
+        background-color: rgba(6, 54, 14, 0.9);
+    }
+    .bar-menu{
+        visibility: visible;
+        padding: 25px 45px;
+        padding-bottom: 10px;
+        width: 100%;
+
+
+       }
+    .bar-menu:hover{
         cursor: pointer;
     }
-    p{
-        text-align: center;
+    .main-menu{
+        margin-top: 81px;
+        display: none;
     }
+
+    .main-menu-visible {
+        display: block;
+        margin-top: 81px;
+    }
+
+ 
 }

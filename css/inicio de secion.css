@@ -1,0 +1,149 @@
+body {
+
+    font-size: 100%;
+    color: #484e51;
+    background-image: url(../img/waterfall-nature-iceland-snow-wallpaper-preview.jpg);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    width: 100vh;
+    height: 100%;
+    
+ 
+} 
+
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+#central {
+    max-width: 320px;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 250%;
+    color:#000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login {
+    
+    
+    width: 100%;
+    padding: 50px 30px;
+    background-color: #4baacd;
+    
+    -webkit-box-shadow: 0px 0px 20px 15px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 35px 40px 20px 0px rgba(0,0,0,0.15);
+    
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #000000;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #a96262;
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#0992db;
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    background-color: #fdf9f9;
+    
+    margin-top: 10px;
+}
+
+#login button:hover {
+    background-color: #000000;
+    color:#000000;
+}
+
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+}
+
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: #acb4ad;
+}
+
+.inferior {
+    margin-top: 10px;
+    font-size: 90%;
+    text-align: center;
+}
+
+.inferior a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+.inferior a:hover {
+    color: #ff0000;
+}
+
+input[type="text"].txt-usuario:focus {
+    outline: none;
+    box-shadow:2px 2px 6px rgb(91, 87, 94), -2px -2px 6px rgb(45, 76, 169);
+}
+input[type="password"].txt-usuario:focus {
+    outline: none;
+    box-shadow:2px 2px 6px rgb(54, 54, 55), -2px -2px 6px rgb(52, 43, 226);
+}

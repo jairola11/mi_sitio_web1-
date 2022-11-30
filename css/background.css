@@ -1,5 +1,5 @@
 .box-main{
-    background-image: url("/img/paisaje.jpg");
+    background-image: url("../img/iceland-pictures-for-large-desktop-wallpaper-preview.jpg");
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -22,4 +22,8 @@ li{
 }
 .last-item{
     margin-right: 80px;
+}
+
+li:hover {
+    background-color: white;
 }

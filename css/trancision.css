@@ -1,0 +1,91 @@
+.box-1 {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 30px;
+    background-color: darkcyan;
+    transition: background-color 1s;
+}
+.box-1:hover {
+    background-color: goldenrod;
+    cursor: pointer;
+}
+.box-2 {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    position: static;
+    display: inline-block;
+    background-color: rgb(64,64,64);
+    transition: margin-left 1s;
+}
+.box-2:hover {
+    margin-left: 330px;
+    cursor: pointer;
+}
+.box-3 {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    position: fixed;
+    left: 690px;
+    display: inline-block;
+    background-color: rgb(190, 11, 11);
+    transition: left 1.5s;
+    cursor: pointer;
+}
+.box3-old {
+    left: 720px;
+    display: inline-block;
+    background-color: rgb(48, 150, 11);
+}
+.box3-new {
+    left: 1050px;
+    display: inline-block;
+    background-color: rgb(48, 150, 11);
+}
+.bol1{
+    width: 200px;
+    height: 80px;
+    background-color: rgb(115, 118, 121);
+    border-radius: 350px; 
+    box-shadow: 10px 5px 10px;
+    margin: 0 auto;
+}
+.bol2New{
+    background-color: rgb(31, 168, 77);
+    transition: left 1.8s;
+}
+.bol2{
+    position: relative;
+    top:5%;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(224, 228, 231);
+    border-radius: 100%;
+    box-shadow: -5px 5px 10px;
+    transition: left 1.8s;
+}
+.bolNew{
+    left: 120px;
+    box-shadow: 5px 5px 10px;
+}
+.bolOld{
+    left: 10px;
+}
+.box-5{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 30px;
+    background-color: aquamarine;
+    border-radius: 300px;
+    transition: all 1.2s;
+    position: fixed;}
+
+.box-5:hover{
+    width: 600px;
+height: 600px;
+border-radius: 600px;
+}
+

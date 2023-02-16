@@ -121,13 +121,29 @@ p{
     background-color: rgb(225, 10, 10);;
 }
 .text-grafica{
-    transform: rotate(-90deg);
-   height: 20px;
-   width: 500px;
-   text-align: center;
-   justify-content: center;
-margin: -240px;
-margin-top: 240px;
-   
-
+  font-size: 1.8em;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: center;
+}
+.line{
+    z-index: -1;
+    position: absolute;
+    border-top: 1px dashed rgb(0,0, 0);
+    width: 1150px;
+}
+.line1{
+    height: 100px;
+}
+.line2{
+    height: 200px;
+}
+.line3{
+    height: 300px;
+}
+.line4{
+    height: 400px;
+}
+.line5{
+    height: 500px;
 }

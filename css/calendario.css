@@ -26,10 +26,10 @@ h1{
 }
 
 .box {
-    background-color: darkcyan;
-    border: 2px darkblue solid;
-    box-shadow: 3px 3px 5px rgb(1, 1, 59);
-    height:80px;
+    background-color: rgb(71, 219, 150);
+    
+    box-shadow: 3px 3px 5px rgb(79, 141, 143);
+    height:80px; 
     color: white;
     display: flex;
     justify-content: center;
@@ -47,9 +47,8 @@ h1{
 }
 
 .mes     {
-    background-color: rgb(128, 165, 165);
-    border: 2px darkblue solid;
-    box-shadow: 3px 3px 5px rgb(1, 1, 59);
+    background-color: rgb(106, 199, 168);
+    border: 2px rgb(47, 180, 107) solid;
     height:80px;
     color: rgb(0, 0, 0);
     display: flex;
@@ -66,26 +65,26 @@ h1{
 }
 
 .nes6{
-    background-color: rgb(179, 110, 110);
+    background-color: rgb(48, 126, 150);
 } 
 .nes13{
-    background-color: rgb(179, 110, 110);
+    background-color: rgb(48, 126, 150);
 }
 .nes20{
-    background-color: rgb(179, 110, 110);
+    background-color: rgb(48, 126, 150);
 }
 .nes27{
-    background-color: rgb(179, 110, 110);
+    background-color: rgb(48, 150, 145);
 }
 .nes5{
-    background-color: rgb(179, 110, 110);
+    background-color: rgb(48, 126, 150);
 }
 .nes12{
-    background-color: rgb(179, 110, 110);
+    background-color: rgb(48, 126, 150);
 }
 .nes19{
-    background-color: rgb(179, 110, 110);
+    background-color: rgb(84, 48, 150);
 }
 .nes26{
-    background-color: rgb(179, 110, 110);
+    background-color: rgb(48, 126, 150);
 }

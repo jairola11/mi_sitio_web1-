@@ -1,0 +1,63 @@
+.main-box{
+    display: grid;
+    grid-template:" logo        Productosnuevosydestacados      hombre         mujer    niños       Ofertas       Guias            busqueda     btn-empresas  btn-iniciar-sesion     menu-hamburguer" 60px 
+                   "main-img       main-img                     main-img     main-img    main-img      main-img    main-img         main-img            main-img      main-img            main-img"        600px/
+                   100px            300px                      100px          100px     100px            200px      300px         300px                    300px         300px              70px;
+}
+.logo{
+    grid-area: logo;
+    background-color: rgb(152, 202, 63);
+}
+.Productosnuevosydestacados{
+    grid-area: Productos nuevos y destacados ;
+    background-color: rgb(152, 202, 63);
+}
+.mujer{
+    grid-area: mujer;
+    background-color: rgb(124, 16, 16);
+}
+.hombre{
+    grid-area: hombre;
+    background-color: rgb(32, 207, 125);
+}
+.niños{
+    grid-area: niños;
+    background-color: rgb(44, 40, 109);
+}
+.Ofretas{
+    grid-area: Ofertas;
+    background-color: rgb(40, 109, 57);
+}
+.busqueda{
+    grid-area: busqueda;
+    background-color: gainsboro;
+}
+.btn-empresas{
+    grid-area: btn-empresas;
+    background-color: aqua;
+}
+.btn-iniciar-sesion{
+    grid-area: btn-iniciar-sesion;
+    background-color: orange;
+}
+.menu-hamburguer{
+    grid-area: menu-hamburguer;
+    background-color: bisque;
+}
+.main-img{
+    grid-area: main-img;
+    background-color: blue;
+}
+.texto-grid{
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.texto-grid-2{
+    color: black;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,0 +1,43 @@
+.main-box{
+    display: grid;
+    grid-template:"logo         busqueda     btn-empresas  btn-iniciar-sesion menu-hamburguer" 60px 
+                   "main-img    main-img     main-img      main-img           main-img"        600px/
+                   100px        1fr          300px         300px              70px;
+}
+.logo{
+    grid-area: logo;
+    background-color: rgb(255, 255, 255);
+}
+.busqueda{
+    grid-area: busqueda;
+    background-color: gainsboro;
+}
+.btn-empresas{
+    grid-area: btn-empresas;
+    background-color: aqua;
+}
+.btn-iniciar-sesion{
+    grid-area: btn-iniciar-sesion;
+    background-color: orange;
+}
+.menu-hamburguer{
+    grid-area: menu-hamburguer;
+    background-color: bisque;
+}
+.main-img{
+    grid-area: main-img;
+    background-color: rgb(255, 255, 255);
+}
+.texto-grid{
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.texto-grid-2{
+    color: black;
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

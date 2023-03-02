@@ -181,3 +181,32 @@
 .mac{
     text-align: center;
 }
+
+@media only screen and (min-width: 641px) and (max-width: 1024px){
+    .main-container {
+        width: 85%;
+        grid-template: "header         header"         90px
+                       "img-principal  img-principal"  250px
+                       "news-1         news-2"         auto 
+                       "news-3         news-4"         auto
+                       "news-5         news-6"         auto /
+                        1fr            1fr;
+    }
+}
+@media only screen and (max-width: 640px){
+    .main-container {
+        width: 85%;
+        grid-template: "header"         80px
+                       "img-principal"  260px
+                       "news-1"         auto 
+                       "news-2"         auto
+                       "news-3"         auto
+                       "news-4"         auto 
+                       "news-5"         auto
+                       "news-6"         auto /
+                        1fr;
+    }
+    .news {
+        font-size: .8em;
+    }
+}

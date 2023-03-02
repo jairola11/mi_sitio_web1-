@@ -10,7 +10,7 @@
     gap: 30px;
     display: grid;
     grid-template: "header         header         header"         120px
-                   "imga-principal  imga-principal  imga-principal"  360px
+                   "imga-principal  imga-principal  imga-principal"  350px
                    "article-1       article-2      article-3"      auto /
                     1fr            1fr            1fr;
 }
@@ -65,7 +65,7 @@
         grid-template: "header         header"         90px
                        "imga-principal  imga-principal"  250px
                        "article-1        article-2"         auto 
-                       "article-3         "                    auto/
+                       "article-3        article-4  "                  auto/
                         1fr            1fr;
     }
 }
@@ -73,7 +73,7 @@
     .main-container {
         width: 85%;
         grid-template: "header"         80px
-                       "imga-principal"  250px
+                       "imga-principal"  260px
                        "article-1"         auto 
                        "article-2"         auto
                        "article-3"         auto /

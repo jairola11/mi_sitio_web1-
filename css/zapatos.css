@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.img-principal{
+    background-color: goldenrod;
+    width: 300px;
+    height: 350px;
+    cursor: pointer;
+}
+.fondo-oscuro{
+    background-color: rgb(64,64,64,.8 );
+    height: 100vh;
+}

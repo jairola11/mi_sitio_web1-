@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/carritos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <div class="box-title">
+            <h1 class="title">sneakers</h1>
+        </div>
+        <div class="box-info">     </div>
+        <div class="borde-inferior"></div>
+        <div class="box-realizado">
+            <div id="boxCanasta" class="canasta">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
+    <div class="box-main">
+        <div class="img-box-main">
+                <div  class="img-box"> 
+                <img id="imgBox"  class="img-box" src="img/zapatos/image-product-1.jpg" alt="image-product-1">
+                </div> 
+            <div id="boxImg1" class="box-img1  border"> 
+                <img id="imgMini1"  class="img-mini opacy" src="img/zapatos/image-product-1 - mini.jpg" alt="image-product-2">
+            </div>
+            <div id="boxImg2" class="box-img2  noBorder">
+                <img id="imgMini2" class="img-mini" src="img/zapatos/image-product-2 - mini.jpg" alt="image-product-3">
+            </div>
+            <div id="boxImg3" class="box-img3  noBorder">
+                <img id="imgMini3"  class="img-mini" src="img/zapatos/image-product-3 - mini.jpg" alt="image-product-3">
+            </div>
+            <div id="boxImg4" class="box-img4  noBorder">
+                <img id="imgMini4" class="img-mini" src="img/zapatos/image-product-4 - mini.jpg" alt="image-product-4">
+            </div> 
+        </div>
+
+        <div class="conted">
+            <div class="box-text">
+                <div class="t-orange"><span class="title-or">SNEAKER COMPANY</span></div>
+                <div class="fall-title"><span class="fall">Fall Limited Edition Sneakers</span></div>
+                <div class="info-box"><span class="text">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer</span></div>
+                <div class="info-des">
+                    <div class="valor">125.00</div>
+                    <div class="descuento">50%</div>
+                </div>
+                <div class="valor-ini">250.00</div>
+
+                    <div id="boxTotal" class="total">Total: $0</div>
+                    <div class="carrito">
+                    <button id="menos" class="menos">-</button>
+                    <div class="numero"><span id="contador">0</span></div>
+                    <button id="mas" class="mas">+</button>
+                    <button id="boxCard" class="add"><div class="imag"><i class="fa-solid fa-cart-shopping"></i><span class="cart-add">add to cart</span></div></button>
+                    </div>
+        </div>
+    </div>
+    <div class="cart-body-hiden" id="boxCompras">
+        <div class="head-cart">
+            <div class="cart">Carro</div>
+            <div class="exit" id="boxExit"> <i class="fa-regular fa-circle-xmark"></i></div>
+            <div class="linea"></div>
+        </div>
+        <div id="boxEmpty" class="vacio"> carrito de compras está vacio.</div>
+        <div id="boxBody" class="cart-body-hiden">    
+            <div class="cart-img"><img src="img/zapatos/image-product-1-thumbnail.webp" alt="img-Snakers"></div>
+            <div class="box-text-cart">fall limited Snakers Edition</div>
+            <div id="valorCart" class="valor-cart">125*0</div>
+            <div id="valorPago" class="valor-pago">000.00</div>
+            <div id="boxDelate" class="delate"><i class="fa-solid fa-trash-can"></i></div>
+        </div>
+        <button class="check">Checkout</button>
+    </div>
+</body>
+</html>
+<script src="./js/carritos.js"></script>
+<script src="https://kit.fontawesome.com/1bb21c65ac.js" crossorigin="anonymous"></script>

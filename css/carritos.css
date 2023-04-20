@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .head{
     box-shadow: 1px, 0px, 1px black;
     display: grid;
@@ -112,12 +117,12 @@ img{
 .img-box{
     grid-area: img-box;
     width: 100%;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 10%;
 }
 .img-mini{
     width: 100%;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .box-img1{
     width: 100%;
@@ -307,3 +312,40 @@ img{
 .cart-body-hiden{
     display: none;
 }
+/* .lightbox{
+    position: fixed;
+    background-color: rgb(64,64,64);
+    width: 100%;
+    height: 100vh;
+} */
+.img-body{
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.838);
+    display: grid;
+    grid-template:  "empty-l empty-c      empty-d" 0px
+                    "empty-l muestra      empty-d" 100%/
+                    1fr      40%           1fr;
+}
+/* .img-body-none{
+    display: none;
+/* }
+.exit-body{
+    grid-area: exit-body;
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+}
+.box-body-img{
+    display: grid;
+    grid-area: muestra;
+    height: 100vh;
+    width: 100%;
+    grid-template:  "empty-he   empty-he  empty-he   exit-body empty-hea  empty-hea empty-hea"   60px
+                    "img-box    img-box   img-box    img-box   img-box    img-box   img-box"   435px
+                    "empty-0    empty-0   empty-0    empty-0   empty-0    empty-0   empty-0"   30px
+                    "box-img1   empty1    box-img2   empty2    box-img3   empty3    box-img4" 90px/
+                    90px        25px      90px       25px      90px       25px      90px;
+    
+} */ 

@@ -347,7 +347,7 @@ img{
     position: relative;
     top: 40%;
     cursor: pointer;
-    right:-10px ;
+    right:-5px ;
 }
 .before{
     font-size: 5vh;
@@ -356,6 +356,6 @@ img{
     z-index: 1;
     position: relative;
     right: 10px;
-    top: 176px;
+    top: 179px;
     cursor: pointer;
 }

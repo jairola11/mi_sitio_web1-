@@ -134,7 +134,7 @@ menos.addEventListener('click', disminuirContador);
 
 boxCard.addEventListener('click', function () {
   if (valorContador != 0) {
-    alert('Su pedido ha sido reservado con éxito. ¡Gracias por confiar en nosotros!')
+    alert('Su pedido ha sido realizado con exito gracias por su compra ')
     boxCanasta.classList.add("canasta-new");
     boxBody.classList.add('cart-body');
     boxBody.classList.remove('cart-body-hiden');
@@ -142,7 +142,7 @@ boxCard.addEventListener('click', function () {
     boxEmpty.classList.remove('span-vacio');
   }
   if(valorContador == 0){
-    alert('su pedido es invalido intente nuevamente');
+    alert('su pedido no se pudo realizar intenta de nuevo');
   }
 });
 let imgBoxbody = document.getElementById("imgBoxBody");

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/carritos.css">
+    <link rel="stylesheet" href="./css/carritos23.css">
     <title>Document</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
             <div class="opacity about">About</div>
             <div class="opacity contact">Contact</div>
        </div>
-        <div class="box-info">    </div>
+        <!-- <div class="box-info">    </div> -->
         <div class="borde-inferior"></div>
         <div class="box-realizado">
             <div id="boxCanasta" class="canasta">
@@ -60,16 +60,19 @@
                     <div class="descuento">50%</div>
                 </div>
                 <div class="valor-ini">250.00</div>
+                    <div class="total">
+                        <div id="boxTotal">Precio: $0</div>
+                        <div id="unidades">unidades: 0</div>
+                    </div>
 
-                    <div id="boxTotal" class="total">Total: $0</div>
                     <div class="carrito">
                     <button id="menos" class="menos">-</button>
                     <div class="numero"><span id="contador">0</span></div>
                     <button id="mas" class="mas">+</button>
                     <button id="boxCard" class="add"><div class="imag"><i class="fa-solid fa-cart-shopping"></i><span class="cart-add">add to cart</span></div></button>
                     </div>
+                </div>
         </div>
-    </div>
     <div class="cart-body-hiden" id="boxCompras">
         <div class="head-cart">
             <div class="cart">Carro</div>
@@ -86,10 +89,30 @@
         </div>
         <button class="check">Checkout</button>
     </div>
-        <div    id="imgBody" class="img-body-none">
-            <div class="box-body-img">
-    </div> 
 </div>
+<div    id="imgBody" class="img-body-none">
+    <div class="box-body-img">
+        <div class="exit-body" id="bodyExit"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+        <div class="nex" id="btnNex"><i class="fa-solid fa-circle-chevron-left"></i></i></div>
+        <div class="before" id="btnBefore"><i class="fa-solid fa-circle-chevron-right"></i></i></div>
+        <div  class="img-box"> 
+            <img id="imgBoxBody"  class="img-box" src="img/zapatos/image-product-1.jpg" alt="image-product-1">
+         </div> 
+        <div id="boxImgBody1" class="box-img1  border"> 
+            <img id="imgMiniBody1"  class="img-mini opacy" src="img/zapatos/image-product-1 - mini.jpg" alt="image-product-2">
+        </div>
+        <div id="boxImgBody2" class="box-img2  noBorder">
+            <img id="imgMiniBody2" class="img-mini" src="img/zapatos/image-product-2 - mini.jpg" alt="image-product-3">
+        </div>
+        <div id="boxImgBody3" class="box-img3  noBorder">
+            <img id="imgMiniBody3"  class="img-mini" src="img/zapatos/image-product-3 - mini.jpg" alt="image-product-3">
+        </div>
+        <div id="boxImgBody4" class="box-img4  noBorder">
+            <img id="imgMiniBody4" class="img-mini" src="img/zapatos/image-product-4 - mini.jpg" alt="image-product-4">
+        </div> 
+    </div>
+</div>
+
 </body>
 </html>
 <script src="./js/carritos.js"></script>

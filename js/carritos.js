@@ -241,14 +241,14 @@ function anime() {
   imgBoxbody.classList.add('anime')
 }
 
-function imgNex() { 
+function imgbefore() { 
   contar = contar +1;
    if (contar > 4) {
     contar=1;
   } 
   cambio();
 }
-function imgbefore() {
+function imgNex() {
   contar = contar -1;
   if (contar < 1) {
     contar=4;

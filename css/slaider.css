@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    
+}
+.main-content{
+display: grid;
+grid-template:  " empty-left  main-nav  empty-rigth"
+                 "empty-left  img-toyota   empty-rigth"
+                 "empty-left   iconos   empty-rigth"/
+                  1fr           1500px     1fr
+}
+.main-nav{
+    grid-area:main-nav ;
+    height: 60px;
+    background-color: red;
+    display: flex;
+    gap: 35%;
+}
+.img-toyota{
+    grid-area: img-toyota;
+    width: 100%;
+    
+};
+.main-ul{
+    list-style: none;
+    color: rgb(215, 215, 215);
+    font-size: 1.3em; 
+}
+.main-logo > img{
+    float: left;
+    height: 29px;
+    padding: 12px;
+    margin-left: 20px;
+}
+
+.empty-left{
+    grid-area:empty-left ;
+    background-color: rgb(223,220,225);
+}
+.empty-rigth{
+    grid-area:empty-right;
+    background-color: rgb(223,220,225);
+}
+.item-menu{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgb(250, 246, 246);
+    font-weight: 900;
+}
+.style-li{
+    padding: 12px 40px;
+   display:inline-block;
+}
+.iconos{
+    grid-area: iconos;
+    height: 100vh;
+}
+.arrow-left,.arrow-rigth{
+position: relative;
+background-color: aliceblue;
+border-radius: 40%;
+width: 70px;
+height: 70px;
+cursor: pointer;
+font-size: 40px;
+}
+.arrow-left{
+    display: grid;
+    bottom: 51%;
+    left: .6%;
+    place-content: center;
+}
+.arrow-rigth{
+    left: 94.7%;
+    bottom: 58%;
+    display: grid;
+    place-content: center;
+}

@@ -29,7 +29,7 @@
 //         carouselImage.classList.remove("fade-out");
 //     }, 500);
 // }
-const slider = document.querySelector('#slider1');
+const slider = document.querySelector('#slider');
 let sliderSection = document.querySelectorAll('.slider-section');
 let sliderSectionLast = sliderSection[sliderSection.length -1];
 const arrowLeft = document.querySelector('#arrowLeft');
@@ -40,7 +40,7 @@ slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 function moveRight(){
     let sliderSectionFirst = document.querySelectorAll('.slider-section')[0];
     slider.style.marginLeft = '-200%';
-    slider.style.transition = 'all 1s';
+    slider.style.transition = 'all 0.7s';
     setTimeout(function(){
         slider.style.transition = 'none';
         slider.insertAdjacentElement('beforeend', sliderSectionFirst);

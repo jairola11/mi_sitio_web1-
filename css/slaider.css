@@ -78,3 +78,19 @@ font-size: 40px;
     display: grid;
     place-content: center;
 }
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+}
+
+/* @keyframes slideAnimation {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+} */

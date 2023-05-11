@@ -1,47 +1,26 @@
-/* Función para resaltar la sección activa en el menú de navegación */
-function resaltarSeccion() {
-    const secciones = document.querySelectorAll("section");
-    const menu = document.querySelectorAll("header nav ul li");
-    
-    secciones.forEach((seccion, index) => {
-      const seccionTop = seccion.offsetTop;
-      const seccionHeight = seccion.clientHeight;
-      
-      if (window.scrollY >= seccionTop - 50 && window.scrollY < seccionTop + seccionHeight - 50) {
-        menu[index].classList.add("activo");
-      } else {
-        menu[index].classList.remove("activo");
-      }
-    });
-  }
-  
-  /* Evento de desplazamiento para resaltar la sección activa en el menú de navegación */
-  window.addEventListener("scroll", () => {
-    resaltarSeccion();
-  });
-  
-  /* Evento de envío de formulario de contacto */
-  const form = document.querySelector("form");
-  
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    
-    const nombre = document.querySelector("#nombre").value;
-    const email = document.querySelector("#email").value;
-    const mensaje = document.querySelector("#mensaje").value;
-    
-    /* Aquí podrías agregar código para enviar el formulario a través de AJAX o una API */
-    
-    alert(`Gracias por enviar tu mensaje, ${nombre}!`);
-  });
-//   function mostrarModal(event) {
-//     event.preventDefault();
-//     const modal = event.target.parentNode.querySelector('.modal');
-//     modal.style.display = 'block';
-//   }
-  
-//   function cerrarModal(event) {
-//     event.preventDefault();
-//     const modal = event.target.parentNode.parentNode;
-//     modal.style.display = 'none';
-//   }
+// Obtener las referencias a los elementos del DOM
+var slides = document.querySelectorAll(".slide");
+var currentIndex = 0;
+
+// Función para cambiar la imagen actual y activar el slide correspondiente
+function changeSlide() {
+    // Ocultar todos los slides
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+    }
+
+    // Mostrar el slide actual
+    slides[currentIndex].classList.add("active");
+}
+
+// Función para avanzar al siguiente slide
+function nextSlide() {
+    currentIndex++;
+    if (currentIndex >= slides.length) {
+        currentIndex = 0;
+    }
+    changeSlide();
+}
+
+// Cambiar al siguiente slide cada 3 segundos (3000 ms)
+setInterval(nextSlide, 3000);

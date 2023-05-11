@@ -1,82 +1,100 @@
-*{
+* {
     margin: 0;
     padding: 0;
     overflow: auto;
-    
 }
 
-.main-content{
+.main-content {
     display: grid;
-    grid-template:"empty-left      main-nav      empty-right"
-                    "empty-left    img-toyota    empty-right"
-                    "empty-left    iconos        empty-right"/ 
+    grid-template: "empty-left      main-nav      empty-right"
+                    "empty-left    img-valorant1    empty-right"
+                    "empty-left    iconos        empty-right" /
                     1fr             1500px       1fr;
 }
-.empty-left{
-    grid-area:empty-left ;
-    background-color: rgb(223,220,225);
+
+.empty-left {
+    grid-area: empty-left;
+    background-color: rgb(223, 220, 225);
 }
-.empty-right{
-    grid-area:empty-right;
-    background-color: rgb(223,220,225);
+
+.empty-right {
+    grid-area: empty-right;
+    background-color: rgb(223, 220, 225);
 }
-.img-toyota{
-    grid-area: img-;
+
+.img-valorant1 {
+    grid-area: img-valorant1;
     width: 100%;
 }
-.main-nav{
+
+.main-nav {
     grid-area: main-nav;
     height: 60px;
     background-color: rgb(241, 12, 12);
     display: flex;
     gap: 35%;
 }
-.main-logo > img{
+
+.main-logo > img {
     float: left;
     height: 29px;
     padding: 12px;
     margin-left: 20px;
 }
-.main-ul{
+
+.main-ul {
     list-style: none;
     color: rgb(215, 215, 215);
-    font-size: 1.3em; 
+    font-size: 1.3em;
 }
 
-.style-li{
+.style-li {
     padding: 12px 40px;
     display: inline-block;
 }
-.item-menu{
+
+.item-menu {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: rgb(255, 253, 253);
     font-weight: 900;
 }
-.iconos{
+
+.iconos {
     grid-area: iconos;
-    height:100vh;
+    height: 100vh;
 }
-.arrow-left, .arrow-right{
+
+.arrow-left,
+.arrow-right {
     position: relative;
     background-color: aliceblue;
     border-radius: 40%;
-    width:70px;
+    width: 70px;
     height: 70px;
     cursor: pointer;
     font-size: 40px;
 }
-.arrow-left{
+
+.arrow-left {
     display: grid;
     bottom: 51%;
-    left: .6%;
+    left: 0.6%;
     place-content: center;
 }
-.arrow-right{
+
+.arrow-right {
     left: 94.7%;
     bottom: 58%;
     display: grid;
     place-content: center;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.fade-transition {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-transition.fade-out {
+    opacity: 0;
+}

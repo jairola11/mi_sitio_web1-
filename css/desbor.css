@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.sidebar .sidebar-brand {
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sidebar .sidebar-brand .sidebar-brand-icon {
+    margin-right: 5px;
+}
+
+.sidebar .sidebar-brand .sidebar-brand-text {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.sidebar .sidebar-divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+    position: relative;
+}
+
+.sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.sidebar .nav-link .collapse-item {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link .collapse-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .active .collapse-item {
+    color: #fff;
+}
+
+.sidebar .sidebar-toggler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Estilos del contenido principal */
+#content-wrapper {
+    margin-left: 250px;
+    transition: all 0.5s ease;
+}
+
+/* Media query para pantalla pequeña */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar .sidebar-brand {
+        text-align: left;
+    }
+
+    #content-wrapper {
+        margin-left: 0;
+    }
+
+    .sidebar .sidebar-toggler {
+        display: block;
+    }
+}

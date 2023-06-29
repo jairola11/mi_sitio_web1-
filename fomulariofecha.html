@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <h1>Formulario de Plazo de Carga de Archivo</h1>
+  <form>
+    <label for="dia">Día:</label>
+    <input type="number" id="dia" min="1" max="31" required>
+
+    <label for="mes">Mes:</label>
+    <input type="number" id="mes" min="1" max="12" required>
+
+    <label for="anio">Año:</label>
+    <input type="number" id="anio" min="2022" max="2024" required>
+
+    <label for="hora">Hora:</label>
+    <input type="number" id="hora" min="0" max="23" required>
+
+    <label for="minutos">Minutos:</label>
+    <input type="number" id="minutos" min="0" max="59" required>
+
+    <button type="button" onclick="calcularTiempoRestante()">Calcular</button>
+  </form>
+
+  <div id="resultado"></div>
+    <script src="fecha.js"></script>
+</body>
+</html>

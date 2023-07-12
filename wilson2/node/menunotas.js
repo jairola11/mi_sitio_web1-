@@ -15,19 +15,19 @@ function mostrarMenu() {
   console.log('------------------------ BIENVENIDO ------------------------');
   console.log('|                         MENU DE NOTAS                       |');
   console.log('-------------------------------------------------------------');
-  console.log('|    1.   |  Registrar notas de un estudiante            |');
-  console.log('|    2.   |  Eliminar notas de un estudiante             |');
-  console.log('|    3.   |  Mostrar notas                               |');
-  console.log('|    4.   |  Mostrar lista de estudiantes que no aprobaron  |');
-  console.log('|    5.   |  Mostrar lista de promedios                  |');
+  console.log('|    1.   |  Registrar calificaciones de un estudiante.           |');
+  console.log('|    2.   |  Eliminar calificaciones de un estudiante.           |');
+  console.log('|    3.   |  Mostrar calificaciones                              |');
+  console.log('|    4.   |  Mostrar lista de estudiantes que no aprobaron. |');
+  console.log('|    5.   | Mostrar lista de promedios.                 |');
   console.log('|    6.   |  Salir                                       |');
   console.log('-------------------------------------------------------------');
 }
 
 // Función que registra las notas de un estudiante ingresadas por el usuario
-function registrarNotas() {
+function registrarcalificaciones() {
   let nombre = '';
-  const notasEstudiante = [];
+  const calificacionesEstudiante = [];
 
   // Pedimos al usuario que ingrese el nombre del estudiante
   op.question('Por favor, ingrese el nombre del estudiante: ', (respuesta) => {
@@ -35,30 +35,31 @@ function registrarNotas() {
     let contador = 1;
 
     // Utilizamos una función recursiva para pedir al usuario que ingrese las notas del estudiante
-    const ingresarNota = () => {
-      op.question(`Por favor, ingrese la nota ${contador}: `, (respuesta) => {
-        const nota = parseFloat(respuesta);
-        notasEstudiante.push(nota);
+    const ingresarcalificaciones = () => {
+      op.question(`Por favor, ingrese la calificacion ${contador}: `, (respuesta) => {
+        const calificacion= parseFloat(respuesta);
+        calificacionesEstudiante.push(calificacion);
         contador++;
 
         // Si aún no se han ingresado todas las notas, llamamos nuevamente a la función recursiva
         if (contador <= 3) {
-          ingresarNota();
+          ingresar();
         } else {
           // Una vez que se han ingresado todas las notas, almacenamos los datos del estudiante en el arreglo "estudiantes"
           estudiantes.push({ nombre, notas: notasEstudiante });
-          console.log(`Notas registradas exitosamente para el estudiante ${nombre}.\n`);
+          console.log(`las calificaciones registraron exitosamente para el estudiante ${nombre}.\n`);
           mostrarMenu();
+          solicitarOpcion();
         }
       });
     };
 
-    ingresarNota();
+    ingresarcalificaciones();
   });
 }
 
 // Función que elimina las notas de un estudiante seleccionado por el usuario
-function eliminarNotas() {
+function eliminarcalificaciones() {
   // Pedimos al usuario que ingrese el nombre del estudiante cuyas notas desea eliminar
   op.question('Por favor, ingrese el nombre del estudiante: ', (nombre) => {
     // Buscamos al estudiante en el arreglo "estudiantes"
@@ -67,25 +68,26 @@ function eliminarNotas() {
     // Si encontramos al estudiante, lo eliminamos del arreglo
     if (estudianteIndex !== -1) {
       estudiantes.splice(estudianteIndex, 1);
-      console.log(`Notas del estudiante ${nombre} eliminadas exitosamente.\n`);
+      console.log(`calificaciones del estudiante ${nombre} eliminadas exitosamente.\n`);
     } else {
-      console.log(`No se encontraron notas para el estudiante ${nombre}.\n`);
+      console.log(`No se encontraron calificaciones para el estudiante ${nombre}.\n`);
     }
 
     mostrarMenu();
+    solicitarOpcion();
   });
 }
 
 // Función que muestra las notas y promedios de todos los estudiantes registrados
-function mostrarNotasYPromedio() {
-  console.log('------------------ NOTAS Y PROMEDIOS ------------------');
+function mostrar_calificaciones_Promedio() {
+  console.log('------------------ calificaciones Y PROMEDIOS ------------------');
 
   // Recorremos el arreglo "estudiantes" y mostramos las notas y el promedio de cada estudiante
   for (let estudiante of estudiantes) {
     const notasEstudiante = estudiante.notas;
     const promedio = calcularPromedio(notasEstudiante);
 
-    console.log(`${estudiante.nombre}: Notas - ${notasEstudiante.join(', ')}, Promedio final: ${promedio}`);
+    console.log(`${estudiante.nombre}: calificaciones - ${notasEstudiante.join(', ')}, Promedio final: ${promedio}`);
   }
 
   // Si no hay estudiantes registrados, mostramos un mensaje indicando que no hay datos para mostrar
@@ -94,18 +96,19 @@ function mostrarNotasYPromedio() {
   }
 
   mostrarMenu();
+  solicitarOpcion();
 }
 
 // Función que muestra la lista de estudiantes que no aprobaron (promedio menor a 3)
-function mostrarListaPerdieron() {
+function mostrar_perdieron() {
   console.log('-------------- LISTA DE ESTUDIANTES QUE NO APROBARON --------------');
 
   let estudiantesPerdieron = [];
 
   // Recorremos el arreglo "estudiantes" y verificamos si el promedio de cada estudiante es menor a 3
   for (let estudiante of estudiantes) {
-    const notasEstudiante = estudiante.notas;
-    const promedio = calcularPromedio(notasEstudiante);
+    const calificaciones_Estudiante = estudiante.calificacion;
+    const promedio = calcularPromedio(calificaciones_Estudiante);
 
     if (promedio < 3) {
       estudiantesPerdieron.push(estudiante.nombre);
@@ -120,6 +123,7 @@ function mostrarListaPerdieron() {
   }
 
   mostrarMenu();
+  solicitarOpcion();
 }
 
 // Función que muestra los promedios de todos los estudiantes registrados
@@ -128,8 +132,8 @@ function mostrarPromedio() {
 
   // Recorremos el arreglo "estudiantes" y mostramos el promedio de cada estudiante
   for (let estudiante of estudiantes) {
-    const notasEstudiante = estudiante.notas;
-    const promedio = calcularPromedio(notasEstudiante);
+    const calificaciones_Estudiante = estudiante.calificacion;
+    const promedio = calcularPromedio(calificaciones_Estudiante);
 
     console.log(`${estudiante.nombre}: Promedio final: ${promedio}`);
   }
@@ -140,54 +144,55 @@ function mostrarPromedio() {
   }
 
   mostrarMenu();
+  solicitarOpcion();
 }
 
 // Función que calcula el promedio de un arreglo de notas
 function calcularPromedio(notas) {
-  const sumaNotas = notas.reduce((suma, nota) => suma + nota, 0);
-  const promedio = sumaNotas / notas.length;
+  const sumacalificacion = caficacion.reduce((suma, calificacion) => suma + calificacion, 0);
+  const promedio = sumacalificacion/ notas.length;
   return promedio.toFixed(2);
+}
+
+// Función para solicitar al usuario que seleccione una opción del menú
+function solicitarOpcion() {
+  op.question('|   Selecciona una opción: ', (opcion) => {
+    console.log('-------------------------------------------------------------');
+
+    // Según la opción seleccionada, ejecutamos la función correspondiente o mostramos un mensaje indicando una opción inválida
+    switch (opcion) {
+      case '1':
+        registrarcalificaciones();
+        break;
+      case '2':
+        eliminarcalificaciones();
+        break;
+      case '3':
+        mostrar_calificaciones_Promedio();
+        break;
+      case '4':
+        mostrar_perdieron();
+        break;
+      case '5':
+        mostrarPromedio();
+        break;
+      case '6':
+        op.close();
+        break;
+      default:
+        console.log('Opción inválida. Por favor, seleccione una opción válida.\n');
+        mostrarMenu();
+        solicitarOpcion();
+        break;
+    }
+  });
 }
 
 // Función principal que inicia el programa
 function iniciarPrograma() {
   mostrarMenu();
-  let opcion = '';
-
-  // Utilizamos un bucle while para mantener el programa en ejecución hasta que se seleccione la opción "6" (Salir)
-  while (opcion !== '6') {
-    // Solicitamos al usuario que seleccione una opción del menú
-    op.question('|   Selecciona una opción: ', (respuesta) => {
-      console.log('-------------------------------------------------------------');
-      opcion = respuesta;
-
-      // Según la opción seleccionada, ejecutamos la función correspondiente o mostramos un mensaje indicando una opción inválida
-      switch (opcion) {
-        case '1':
-          registrarNotas();
-          break;
-        case '2':
-          eliminarNotas();
-          break;
-        case '3':
-          mostrarNotasYPromedio();
-          break;
-        case '4':
-          mostrarListaPerdieron();
-          break;
-        case '5':
-          mostrarPromedio();
-          break;
-        case '6':
-          op.close();
-          break;
-        default:
-          console.log('Elección no válida. Por favor, elija una opción que sea válida.\n');
-          break;
-      }
-    });
-  }
+  solicitarOpcion();
 }
 
-// Iniciamos el programa llamando a la función principal
+
 iniciarPrograma();

@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+}
+.nav-info{
+    height: 2.4vh;
+}
+.container-nav{
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.input-buscador{
+    height: 35px;
+    width: 30vw;
+}
+.container-buscador i{
+    position: relative;
+    left: -26px;
+}
+.container-ubicacion{
+    display: grid;
+    grid-template:"location empty ubicacion"1fr/ 
+                    1fr  1fr;
+}
+.location{
+    font-size: 1.7rem;
+    grid-area: location;
+}
+.ubicacion{
+    grid-area: ubicacion;
+}
+.ubicacion h6{
+    font-size: 1rem ;
+}
+i{
+    cursor: pointer;
+}
+.container-compras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-compras span{
+    border-radius: 50%;
+    background-color: rgb(231, 24, 24);
+    padding: 5px;
+    font-size: 17px;
+    color: aliceblue;
+}
+.container-compras i{
+    font-size: 25px;
+}
+.container-puntos{
+
+}

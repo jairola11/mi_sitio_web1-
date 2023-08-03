@@ -8,16 +8,14 @@ const op = readline.createInterface({
 });
 
 function mostrarMenu() {
-  console.log('-----------------$ MENU DE NOTAS $------------------------');
-  console.log('|    1.   |  Registrar notas de un estudiante            |');
-  console.log('|    2.   |  Eliminar notas de un estudiante             |');
-  console.log('|    3.   |  Mostrar notas                               |');
-  console.log('|    4.   |  Mostrar lista de estudiantes que perdieron  |');
-  console.log('|    5.   |  Mostrar lista de promedios                  |');
+  console.log('----------------- MENU DE NOTAS ------------------------');
+  console.log('|    1.   |  Registrar calificaciones de un estudiante.   |');
+  console.log('|    2.   |  Eliminar calificaciones de un estudiante.             |');
+  console.log('|    3.   |   Mostrar calificaciones                          |');
+  console.log('|    4.   |  Mostrar lista de estudiantes que no aprobaron |');
+  console.log('|    5.   |  Mostrar lista de promedios.                  |');
   console.log('|    6.   |  Salir                                       |');
-  console.log('-------------------------$$--$$---------------------------');
   op.question('|   seleccion   |   Seleccione una opción: ', (opcion) => {
-  console.log('-------------------------$$--$$---------------------------');
     switch (opcion) {
       case '1':
         registrarNotas();
@@ -48,12 +46,12 @@ function registrarNotas() {
   let nombre = '';
   const notasEstudiante = [];
 
-  op.question('Ingrese el nombre del estudiante: ', (respuesta) => {
+  op.question('Por favor, ingrese el nombre del estudiante: ', (respuesta) => {
     nombre = respuesta;
     let contador = 1;
 
     const ingresarNota = () => {
-      op.question(`Ingrese la nota ${contador}: `, (respuesta) => {
+      op.question(`Por favor, ingrese la calificacion ${contador}: `, (respuesta) => {
         const nota = parseFloat(respuesta);
         notasEstudiante.push(nota);
         contador++;
@@ -62,7 +60,7 @@ function registrarNotas() {
           ingresarNota();
         } else {
           estudiantes.push({ nombre, notas: notasEstudiante });
-          console.log(`Notas registradas con éxito para ${nombre}.\n`);
+          console.log(`las calificaciones registraron exitosamente para el estudiante ${nombre}.\n`);
           mostrarMenu();
         }
       });
@@ -78,11 +76,9 @@ function eliminarNotas() {
 
     if (estudianteIndex !== -1) {
       estudiantes.splice(estudianteIndex, 1);
-      console.log(`Notas del estudiante ${nombre} eliminadas con éxito.\n`);
+      console.log(`calificaciones ${nombre} eliminadas con éxito.\n`);
     } else {
-    console.log('----------------|  listado de notas     |-------------------------');
-    console.log(` No se encontraron notas para el estudiante ${nombre}.\n`);
-    console.log('----------------| --------------------- |-------------------------');
+    console.log(` No se encontraron calificaciones para el estudiante ${nombre}.\n`)
     }
 
     mostrarMenu();
@@ -90,19 +86,18 @@ function eliminarNotas() {
 }
 
 function mostrarNotasYPromedio() {
-  console.log('---- NOTAS Y PROMEDIOS ----');
+  console.log('---- calificaciones Y PROMEDIOS----');
 
   for (let estudiante of estudiantes) {
     const notasEstudiante = estudiante.notas;
     const promedio = calcularPromedio(notasEstudiante);
 
-    console.log(`${estudiante.nombre}: Notas - ${notasEstudiante.join(', ')}, el  Promedio final es: ${promedio}`);
+    console.log(`${estudiante.nombre}:calificaciones - ${notasEstudiante.join(', ')}, el  Promedio final es: ${promedio}`);
   }
 
   if (estudiantes.length === 0) {
-    console.log('----------------| listado de registros  |-------------------------');
+    console.log('---------------- listado de registros-------------------------');
     console.log('|                No hay estudiantes registrados.                 |\n');
-    console.log('----------------| --------------------  |-------------------------');
   }
 
   mostrarMenu();
@@ -120,9 +115,8 @@ function mostrarPromedio() {
   }
 
   if (estudiantes.length === 0) {
-    console.log('----------------| listado de promedios  |-------------------------');
-    console.log('|                No hay estudiantes registrados.                 |\n');
-    console.log('----------------| --------------------  |-------------------------');
+    console.log('----------------calificaciones Y PROMEDIOS -------------------------');
+   
   }
 
   mostrarMenu();
@@ -133,7 +127,7 @@ function mostrarPromedio() {
 
 
 function mostrarListaPerdieron() {
-  console.log('---- LISTA DE ESTUDIANTES QUE PERDIERON ----');
+  console.log('---- LISTA DE ESTUDIANTES QUE NO APROBARON  ----');
 
   let estudiantesPerdieron = [];
 
@@ -149,9 +143,8 @@ function mostrarListaPerdieron() {
   if (estudiantesPerdieron.length > 0) {
     console.log(estudiantesPerdieron.join(', '));
   } else {
-    console.log('----------------| listado de perdedores |-------------------------');
-    console.log('|          No hay estudiantes que hayan perdido.                 |\n');
-    console.log('----------------| --------------------- |-------------------------');
+    console.log('---------------LISTA DE ESTUDIANTES QUE NO APROBARON-------------------------');
+    console.log('|          No hay estudiantes que hayan  perdido.                 |\n');
   }
 
   mostrarMenu();

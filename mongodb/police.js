@@ -118,3 +118,54 @@ watchmen= {
     'age':number,
     'weapon':string,
 }
+
+db.judge.insertOne(
+    {
+'criminalcode':{
+    '_id': ObjectId("64cd29363a914e21e95ac6d9"),
+    'ref':'criminals'
+},
+'watchmencode':{
+    '_id': ObjectId("64cd29373a914e21e95ac6da"),
+'ref':'watchmen'
+}, 'condeine':'8 años'
+}
+    )
+    db.rob.insertOne(
+        {
+            'criminal':[
+                {
+                    '_id': ObjectId("64cd29363a914e21e95ac6d9"),
+                    'references':'criminals'
+                }
+            ],
+            'branch':{
+                '_id': ObjectId("64d39c5bb5a9f6a07bd56374"),
+                'references':'branch'
+            },
+            'date':new Date('2023-05-12')
+        }
+    )
+    db.branch.insertOne(
+        {
+            'branchcode':'4',
+            'branchcode':{
+                '_id': ObjectId("64cd27963a914e21e95ac6d7"),
+                'references':'bank' 
+            }
+        }
+    )
+db.contracts.insertOne(
+    {
+        'branchcode':{
+            '_id':ObjectId("64d39c5bb5a9f6a07bd56374"),
+            'references':'branch'
+        },
+        
+        'watchemencode':{
+            '_id': ObjectId("64cd29373a914e21e95ac6da"),
+            'references':'watchemen'
+        
+        }
+    }
+)

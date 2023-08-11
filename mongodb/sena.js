@@ -304,3 +304,310 @@ db.products.insertMany([
         }
     }
 ])
+
+db.porchase.insertMany(
+    [
+        {
+            'pkIdPorchase':1,
+            'date':new Date("2023-06-09"),
+            'quantity':2,
+            'value':10000,
+            'fkUser':{
+                '_id':ObjectId("64d3b7d3b5a9f6a07bd5639a"),
+                'references':'users'
+            },
+            'fkProduct':{
+                '_id':ObjectId("64d3bee5b5a9f6a07bd563b1"),
+                'references':'products'
+            }
+        },
+        {
+            'pkIdPorchase':2,
+            'date':new Date("2023-02-11"),
+            'quantity':3,
+            'value':20000,
+            'fkUser':{
+                '_id':ObjectId("64d3b7d3b5a9f6a07bd5639b"),
+                'references':'users'
+            },
+            'fkProduct':{
+                '_id':ObjectId("64d3b8dfb5a9f6a07bd563a3"),
+                'references':'products'
+            }
+        },
+        {
+            'pkIdPorchase':3,
+            'date':new Date("2023-12-11"),
+            'quantity':12,
+            'value':12000,
+            'fkUser':{
+                '_id':ObjectId("64d3b7d3b5a9f6a07bd5639d"),
+                'references':'users'
+            },
+            'fkProduct':{
+                '_id':ObjectId("64d3b904b5a9f6a07bd563ac"),
+                'references':'products'
+            }
+        },
+        {
+            'pkIdPorchase':4,
+            'date':new Date("2023-02-04"),
+            'quantity':14,
+            'value':21000,
+            'fkUser':{
+                '_id':ObjectId("64d3b7d3b5a9f6a07bd5639e"),
+                'references':'users'
+            },
+            'fkProduct':{
+                '_id':ObjectId("64d3bee5b5a9f6a07bd563b4"),
+                'references':'products'
+            }
+        },
+        {
+            'pkIdPorchase':5,
+            'date':new Date("2023-08-12"),
+            'quantity':3,
+            'value':13000,
+            'fkUser':{
+                '_id':ObjectId("64d3b7d3b5a9f6a07bd5639f"),
+                'references':'users'
+            },
+            'fkProduct':{
+                '_id':ObjectId("64d3bee5b5a9f6a07bd563b5"),
+                'references':'products'
+            }
+        },
+        {
+            'pkIdPorchase':6,
+            'date':new Date("2023-10-10"),
+            'quantity':4,
+            'value':13400,
+            'fkUser':{
+                '_id':ObjectId("64d3b7d3b5a9f6a07bd563a1"),
+                'references':'users'
+            },
+            'fkProduct':{
+                '_id':ObjectId("64d3bee5b5a9f6a07bd563b6"),
+                'references':'products'
+            }
+        },
+        {
+            'pkIdPorchase':7,
+            'date':new Date("2023-09-11"),
+            'quantity':11,
+            'value':22000,
+            'fkUser':{
+                '_id':ObjectId("64d3b7d3b5a9f6a07bd563a1"),
+                'references':'users'
+            },
+            'fkProduct':{
+                '_id':ObjectId("64d3bee5b5a9f6a07bd563b7"),
+                'references':'products'
+            }
+        },
+        {
+            'pkIdPorchase':8,
+            'date':new Date("2023-02-01"),
+            'quantity':12,
+            'value':14500,
+            'fkUser':{
+                '_id':ObjectId("64d3b698724d5055db58e989"),
+                'references':'users'
+            },
+            'fkProduct':{
+                '_id': ObjectId("64d3bee5b5a9f6a07bd563b8"),
+                'references':'products'
+            }
+        },
+        {
+            'pkIdPorchase':9,
+            'date':new Date("2023-12-05"),
+            'quantity':15,
+            'value':60000,
+            'fkUser':{
+                '_id':ObjectId("64d3b698724d5055db58e988"),
+                'references':'users'
+            },
+            'fkProduct':{
+                '_id':ObjectId("64d3bee5b5a9f6a07bd563b9"),
+                'references':'products'
+            }
+        },
+        {
+            'pkIdPorchase':10,
+            'date':new Date("2023-12-12"),
+            'quantity':9,
+            'value':15000,
+            'fkUser':{
+                '_id':ObjectId("64d3b698724d5055db58e985"),
+                'references':'users'
+            },
+            'fkProduct':{
+                '_id': ObjectId("64d3bee5b5a9f6a07bd563ba"),
+                'references':'products'
+            }
+        }
+    ]
+)
+db.providers.insertMany([
+    {
+        'namepd':'colanta',
+        'phone':'3187284368',
+        'address':'leon 13',
+        'quantity':25,
+        'fkProduct':{
+            '_id':ObjectId("64d3bee5b5a9f6a07bd563b3"),
+            'reerences':'products'
+
+        }
+    },
+    {
+        'namepd':'alpina',
+        'phone':'3187284345',
+        'address':'bogota',
+        'quantity':15,
+        'fkProduct':{
+            '_id':ObjectId("64d3bee5b5a9f6a07bd563b1"),
+            'reerences':'products'
+
+        }
+    },
+    {
+        'namepd':'briza',
+        'phone':'318724368',
+        'address':'caqueta',
+        'quantity':30,
+        'fkProduct':{
+            '_id':ObjectId("64d3bee5b5a9f6a07bd563b2"),
+            'reerences':'products'
+
+        }
+    },
+    {
+        'namepd':'jun valdez',
+        'phone':'31872843454',
+        'address':'neiva',
+        'quantity':10,
+        'fkProduct':{
+            '_id':ObjectId("64d3bee5b5a9f6a07bd563ba"),
+            'reerences':'products'
+
+        }
+    },
+    {
+        'namepd':'gurta del sur ',
+        'phone':'3187455368',
+        'address':'linda',
+        'quantity':20,
+        'fkProduct':{
+            '_id': ObjectId("64d3bee5b5a9f6a07bd563b4"),
+            'reerences':'products'
+
+        }
+    }
+])
+
+
+
+
+
+
+
+// para los nombres
+
+db.users.find(
+    {
+      name: {
+        $regex: "^[LDGAFJ]",
+        $options: "i"
+      }
+    },
+    {
+      _id: 0,
+      name: 1
+    }
+  )
+//   LISTAR  DATOS DE COMPRA Y MOSTAR EL AÑO Y EL NOMBRE 
+db.porchase.aggregate(
+    [{
+        $lookup:{
+            from:'products',
+            localField:'fkProduct',
+            foreignField:'_id',
+            as:'product'
+        } 
+    },
+    {
+        $project:{
+            namepdto:'product.namepdto',
+            mes:{month:'date'},
+            anio:{year:'date'}
+        }
+    }
+    ]
+)
+
+//   para consultar el provedor que mas productro a suministrado
+
+db.products.aggregate([
+    {
+        $lookup:{
+            from:'prodctiveunits',
+            localField:'fkup',
+            foreignField:'_id',
+            as:'up'
+        }
+    },
+    {
+        $project:{
+            _id:false,
+            stock:true,
+            nameup:'$up.nameup'
+        }
+    }
+])
+  
+// db.products.aggregate([
+//     {
+//         $lookup:{
+//             from:'prodctiveunits',
+//             localField:'fkup',
+//             foreignField:'_id',
+//             as:'up'
+//         }
+//     },
+//     {
+//         $project:{
+//             _id:false,
+//             stock:true,
+//             nameup:'$up.nameup',
+//             name:true 
+//         }
+//     }
+// ])
+
+
+
+
+db.porchase.aggregate([
+    {
+        $lookup: {
+            from: 'products',
+            localField: 'fkProduct._id',
+            foreignField: '_id',
+            as: 'product'
+        }
+    },
+    {
+        $unwind: '$product'
+    },
+    {
+        $project: {
+            _id: false,
+            productName: '$product.namepdto',
+            year: { $year: '$date' },
+            month: { $month: '$date' },
+            value: '$value'
+        }
+    }
+])

@@ -1,0 +1,574 @@
+:root {
+    --negro: #faf8f8;
+    /* --negro: #393939; */
+    /* Tipografía */
+    --tipo-titular:'DM Serif Display', serif;
+    --tipo-principal:'Poppins', sans-serif;
+  }
+  
+  /* Reseteamos los margin y paddings de todas las etiquetas */
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    vertical-align: baseline;
+  }
+  
+  /* Evitamos problemas con las imagenes */
+  img, picture, video, iframe, figure {
+    max-width: 100%;
+    width: 100%;
+    display:flex;
+    object-fit: cover;
+    object-position: center center;
+  }
+  
+  /* Reseteamos los enlaces para funcionar como cajas... */
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+  }
+  
+  /* ... excepto los que se encuentran en párrafos */
+  p a {
+    display: inline;
+  }
+  
+  /* Quitamos los puntos de los <li> */
+  li {
+    list-style-type: none;
+  }
+  
+  /* Configuramos anclas suaves */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Desactivamos estilos por defecto de las principales etiquetas de texto */
+  h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Evitamos problemas con los pseudoelementos de quotes */
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    content: none;
+  }
+  
+  /* Configuramos el texto que seleccionamos */
+  ::-moz-selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+  }
+  ::selection {
+    background-color: var(--negro);
+    color: var(--blanco);
+  }
+  
+  /* Nivelamos problemas de tipografías y colocación de formularios */
+  form, input, textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  
+  /* Reseteamos las tablas */
+  table, tr, td {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* Evitamos problemas con los SVG */
+  svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+  }
+  
+  /* Configuramos la tipografía para toda la web */
+  body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--tipo-principal);
+    color: var(--negro);
+    /* opcional */
+    line-height: 1.4em;
+    /* opcional */
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    /* opcional */
+    font-smooth: always;
+    /* opcional */
+    -webkit-font-smoothing: antialiased;
+    /* opcional */
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+  }
+.header{
+    width: 100%;
+    min-height: 5em;
+    background: black;
+    padding: 1em,2em;
+    color:white;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+
+}
+.header .h1{
+  margin-left: 1em;
+}
+
+.header .ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .li{
+    margin: 0 1em;
+}
+
+.main{
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    margin:0 0 1em ;
+    text-align: center;
+    
+}
+
+.seccion{
+  width: 100%;
+  min-height: 80vh;
+  /* background: rgb(101, 164, 34); */
+  background: rgb(234, 205, 165);
+  /*margin:1em 0;*/
+  padding: 2em;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.texto{
+  padding-top: 20px;
+  font-size: 125%;
+  font-family: var(--tipo-principal);
+}
+
+
+
+.seccion .ul .a{
+  animation: aparecer1 2s ease 1 backwards .5s;
+}
+.seccion .ul .a:nth-of-type(2){
+  animation-delay: .8s;
+}
+
+.seccion .info{
+    font-size: 1.2em;
+    animation: aparecer1 2s ease 1 both;
+}
+seccion .proyectos{
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.proyectos{
+  background: white;
+  color:black;
+  box-shadow: 0 0 3em 3em white;
+}
+.seccion .grid{
+    width: 100%;
+  
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    gap: 1em;
+
+    margin:1em 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.seccion .article{
+    width: 100%;
+    min-height: 20vh;
+
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.seccion .figure{
+    width: 100%;
+    background: red;
+
+}
+.seccion .img{
+    width: 100%;
+    border-radius: 3%;
+    
+}
+
+.seccion .h2{
+    font-family: var(--tipo-titular);
+    font-weight: 600;
+    font-size: 5em;
+    line-height: 1em;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+    padding-top: 5%;
+}
+.h3{
+    font-family: var(--tipo-titular);
+    font-size: 3em;
+    line-height: 80%;
+    color:black;
+    padding-bottom: 25px;
+}
+
+.h3 span{
+  position: absolute;
+  right: 0;
+  width:0%;
+  height: 11%;
+  background: rgb(192, 234, 165);
+  border-left: 1px solid black;
+  animation: escribir 6s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+  from {width:72%;}
+  to{width:24%;}
+  
+}
+
+.seccion .h4{
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1rem);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+    font-size: 1.5em;;
+    font-family: var(--tipo-principal);
+    font-style: italic;
+
+    opacity:0;
+    transform: translateZ(1) scale(1.2);
+    transition:all .5s ease;
+}
+.seccion .article:hover .h4{
+    opacity:0.8;
+    transform: translateZ(1) scale(1)
+}
+.trabajos .h2{
+    margin:0 0 1.5rem ;
+}
+
+.sobreMi{
+    width: 100%;
+    min-height: 80vh;
+    
+    margin:1em 0;
+    padding: 2em;
+    color:white;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    }
+.sobreMi .h2{
+    margin: 0 0 1rem;
+    font-family: var(--tipo-titular);
+    font-size: 4em;
+}
+
+.sobreMi .p{
+    max-width: 40rem;
+    
+    text-align: left;
+    margin:0 0 2rem;
+    font-size: 1.6em;
+    text-align: left;
+    line-height: 110%;
+}
+.sobreMi .rrss{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sobreMi .github{
+    width: 3em;
+    height: 3em;
+    
+}
+.sobreMi .github:hover{
+  transform: scale(1.1);
+}
+.sobreMi .linkedin{
+  width: 3em;
+  height: 3em;
+  margin: 0 2em;
+}
+
+.sobreMi .linkedin:hover{
+  transform: scale(1.1);
+}
+
+.sobreMi .instagram{
+  width: 3em;
+  height: 3em;
+}
+
+.sobreMi .instagram:hover{
+  transform: scale(1.1);
+}
+
+.footer{
+  /* background: rgb(101, 164, 34); */
+    background: rgb(234, 205, 165);
+    text-align: center;
+    padding: 2em 0;
+}
+
+.seccion .ul{
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ul .li .a {
+  background-color: rgb(234, 205, 165);
+  border: 2px solid black;
+  border-radius: 30px;
+  box-shadow:black 4px 4px 0 0;
+  color:black;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.ul .li .a:hover {
+  background-color:white;
+}
+
+.ul .li .a :active {
+  box-shadow: black 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .b.ul .li .a  {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.seccion .ul .li{
+    margin: 0 1em;
+}
+
+.footer .span{
+  font-weight: 600;
+}
+
+@keyframes aparecer1{
+  from{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.conte-padre{
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+.puntero{
+  /* background-color: red; */
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 9999;
+}
+.tec{
+  padding-top: 60px;
+  width: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+}
+.tec .li{
+  margin: 0.8em;
+  width:3em;
+}
+
+span#enlace {
+  color: black;
+  font-weight: bold
+}
+
+button#copiador {
+  background-color:black;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 1.2em;
+  font: bold 90% monospace;
+  display: inline-block;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+
+button#copiador:hover {
+color: black;
+background-color: white;
+}
+.es{
+  color: #333
+}
+.en{
+  color:#00a1ff
+}
+.check{
+  position: relative;
+  width: 50px;
+}
+
+.check:before{
+  content:'';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background: #333;
+  border-radius: 25px;
+}
+
+.check:after{
+  content:'';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border:2px solid #333;
+  box-sizing: border-box;
+}
+.check:checked:after{
+  left:25px;
+  border:2px solid #00a1ff;
+}
+.check:checked:before{
+  background:#00a1ff;
+}
+
+.email{
+  font-size: 120%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 980px) {
+  
+  .tec .li{
+    /*margin: 0.2em;
+    width: 1.5em;*/
+    display: none;
+  }
+  .h3 span{
+    display: none;
+  }
+  .seccion .h2{
+    font-size: 3.5rem;
+  }
+  .seccion .h3{
+    font-size: 2rem;
+  }
+  .sobreMi .h2{
+    font-size: 3rem;
+  }
+  .sobreMi .p{
+    font-size: 1rem;
+  }
+  .seccion .grid{
+    display:flow-root;
+  }
+  .seccion .article{
+    margin-top: 5%;
+
+  }
+  }

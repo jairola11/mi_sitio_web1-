@@ -18,3 +18,23 @@ xSalid.addEventListener("click", function() {
     buscadorcell.classList.remove("seekerCell-hidden");
     buscadorcell.classList.add("buscador-movil");
 });
+
+containerXAnna = document.getElementById('containerXAnna');
+containerAna = document.getElementById('containerAna');
+containerChat = document.getElementById('containerChat');
+containerChatAll = document.getElementById('containerChatAll');
+
+
+containerAna.addEventListener("click",function(){
+    containerChat.style.display = 'none';
+    containerXAnna.style.display = 'flex';
+    containerChatAll.style.display = 'block';
+    containerXAnna.addEventListener("click",function(){
+        containerXAnna.style.display = 'none';
+        containerChat.style.display = 'flex';
+        containerChatAll.style.display = 'none';
+    })
+})
+
+
+    

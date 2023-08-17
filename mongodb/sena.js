@@ -191,7 +191,23 @@ db.users.insertMany(
         
     ]
 )
-
+db.products.aggregate([
+    {
+        $lookup:{
+            from:'prodctiveunits',
+            localField:'fkup._id',
+            foreignField:'_id',
+            as:'provedor'
+        }
+    },
+    {$unwind:'$provedor'},
+    {
+        $project:{
+            nameUp:'$provedor.nameup',
+            stock:true
+        }
+    }
+])
 db.products.insertMany([
     {
         'pkidpdto':1,
@@ -506,6 +522,33 @@ db.providers.insertMany([
         }
     }
 ])
+db.porchase.aggregate([
+    {
+        $lookup: {
+            from:'users',
+            localField:'fkUser._id',
+            foreignField:'_id',
+            as:'user'
+        }
+    },
+    {$unwind:'$user'},
+    {
+        $lookup: {
+            from:'products',
+            localField:'fkProduct._id',
+            foreignField:'_id',
+            as:'product'
+        }
+    },
+    {$unwind:'$product'},
+    {
+        $project: {
+            value:1,
+            nameUser:'$user.name',
+            namePdto:'$product.namePdto'
+        }
+    }
+])
 
 
 
@@ -528,25 +571,25 @@ db.users.find(
     }
   )
 //   LISTAR  DATOS DE COMPRA Y MOSTAR EL AÑO Y EL NOMBRE 
-db.porchase.aggregate(
-    [{
-        $lookup:{
-            from:'products',
-            localField:'fkProduct',
-            foreignField:'_id',
-            as:'product'
-        } 
-    },
-    {
-        $project:{
-            namepdto:'product.namepdto',
-            mes:{month:'date'},
-            anio:{year:'date'}
-        }
-    }
-    ]
-)
-
+// db.porchase.aggregate(
+//     [{
+//         $lookup:{
+//             from:'products',
+//             localField:'fkProduct',
+//             foreignField:'_id',
+//             as:'product'
+//         } 
+//     },
+//     {
+//         $project:{
+//             namepdto:'product.namepdto',
+//             mes:{month:'date'},
+//             anio:{year:'date'}
+//         }
+//     }
+//     ]
+// )
++
 //   para consultar el provedor que mas productro a suministrado
 
 db.products.aggregate([
@@ -611,3 +654,4 @@ db.porchase.aggregate([
         }
     }
 ])
+

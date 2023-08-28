@@ -450,105 +450,232 @@ input[type="text"]:focus {
 .container-x-anna{
     display: none;
 } */
-.form-ana{
+
+.container-mobile{
+    display: none;
+}
+.div-search{
+    display: none;
+}
+.container-chat-all{
+    display: none;
+    position: fixed;
+    left: 75vw;
+    top: 37vh;
+    height: 53vh;
+    width: 22vw;
+}
+.img-chat{
+    width: 4vw;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-chat img{
+    width: 100%;
+}
+.input-chat{
+    background-color:#EAEEF3 ;
+    margin: 10px;
+}
+.input-chat::placeholder{
+    font-size: 1.5vh;
+}
+.header-chat{
+    align-items: center;
+    display: flex;
+    background-color: #c2c9cf;
+    height: 17%;
+}
+.header-chat h4{
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin: 10px;
+    color: #196cd1;
+}
+.body-chat{
+    background-color: #dadde0;
+    height: 70%;
+}
+/* .footer-chat{
+    background-color: #EAEEF3;
+    height: 13%;
+} */
+/* .line-footer{
+    height: 1.5px;
+    background-color: #005DAD;
+} */
+.form-ana {
     position: fixed;
     right: 20px;
-    height: calc(100vh - 70px);
+    height: 100vh;
     top: 0;
     width: 406px;
-    bottom:100px;
     display: grid;
-    grid-template:"fm-header"70px
-                "frm-body"minmax(200px, 80vh)
-                "frm-input"70px
-                "frm-exit"100px/
-                406px ;
+    grid-template: "frm-header" 70px
+                   "frm-body"  minmax(150px, 90vh)
+                   "frm-input" 60px
+                   "frm-exit" 80px/
+                    406px;     
 }
-.form-header{
-    grid-area: fm-header;
-    background-color: #005DAD;
-}
-.img-ana{
-    width: 60px;
-    margin: 5px 0 0 5px;
-}
-.form-body{
-    grid-area: frm-body;
-    background-color: #EAEEF3;
-    display: grid;
-    grid-template:'empty-left form-tex empty-right'
-                    'empty-lef slider empty-right'/
-                    50px         1fr      40px;
- }
- .slider{
-    grid-area: slider;
-    background-color: rgb(239, 198, 144);
-    height: 100px;
-    border-radius: 10px;
- }
- .form-tex{
-    grid-area: form-tex;
-    margin: 10px 0 0 0;
-
- }
- .tex-opcion{
-    background-color: white;
-    width: 200px;
-    border-radius: 5px;
-    
-
- }
- .reloj-smg{
-    font-size: 0.7em;
-    position: relative;
-    bottom: 0;
-    left: 150px;
- }
- .title-form{
-    font-size: 1.3em;
-    margin: 0 0 0 5px;
-    color: #EAEEF3;
- }
- .img-ana1{
-    width: 100px;
- }
-.form-input{
-    grid-area: frm-input;
-    background-color: #EAEEF3;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top: 2px solid #005DAD;
+.form-header {
+    grid-area: frm-header;
+    background-color: rgb(88, 141, 194);
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.img-ana-I {
+    width: 60px;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+.title-form {
+    font-family: poppins;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-left: 30px;
+    color: rgb(247, 243, 243);
+    height: 70px;
+    display: flex;
     align-items: center;
 }
-.input-text{
-    background-color:#EAEEF3 ;
-    margin: 0 0 0 10px;
-    border: none;
-    background-color: transparent;
+.form-body {
+    grid-area: frm-body;
+    background-color: rgb(234,238,243);
+    display: grid;
+    grid-template: "empty-left form-text empty-right"
+                   "icon-arrow-left slider    empty-right" /
+                    50px        1fr       40px;
 }
-.icon-smile{
-    margin-right: 30px;
-    font-size: 1.8rem;
+.img-ana-II {
+    width: 100px;
 }
-.input-text:focus{
-    outline: none;
+.form-text {
+    grid-area: form-text;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+.text-opciones {
+    background-color: white;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px;
+    letter-spacing: 0.08em;
 }
 
-.exit-style{
-    color: white;
-    background-color:#005DAD ;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    font-size: 2em;
-    display: grid;
-    place-items: center;
-    margin-top: 15px;
+.text-form-black {
+    font-weight: 900;
+    display: block;
+    margin-top: 30px;
+    letter-spacing: 0.08em;
 }
-.form-exit{
-    grid-area: frm-exit;
+.reloj-msj {
+    font-size: .7em;
+    position: relative;
+    bottom: 0;
+    left: 200px;
+}
+.box-main-slider{
+    width: 325px;
+    overflow: hidden;
+}
+
+.fa-angle-left{
+    color: #005DAD;
+    font-size: 1.6em;
+}
+.slider {
+    grid-area: slider;
+    font-size: .9em;
+    height: 120px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    margin-top: 10px;
+    flex-flow: column wrap;
+    position: relative;
+    right: 150px;
+}
+
+.box-slider {
+    background-color: white;
+    width: 320px;
+    height: 120px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.slider-title {
+    font-weight: 900;
+    font-size: 1em;
+    text-align: center;
+    margin: 10px;
+    color: rgb(0,93,173);
+    letter-spacing: 0.05em;
+    word-spacing: 0.2em;
+}
+.slider-text {
+    font-size: .9em;
+    color: rgb(96,96,96);
+    text-align: center;
+    border-bottom: 1px solid rgb(220,220,220,.6);
+    display: block;
+    padding-bottom: 15px;
+}
+.click-slider {
+    text-align: center;
+    color:  rgb(0,93,173);
+    font-weight: 400;
+    margin-top: 10px;
+}
+.form-input {
+    grid-area: frm-input;
+    background-color: rgb(234,238,243);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid rgb(0,114,206);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.input-text {
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(64,64,64);
+    font-family: poppins, sans-serif;
+    outline: none;
+}
+.icon-smile {
+    margin-right: 30px;
+    font-size: 1.3em;
+}
+.exit-style {
+    background-color: rgb(0,114,206);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.7em;
+    font-family: lato;
+    font-weight: 300;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.search .lupa-hidden{
+    margin: 5px;
+    font-size: 1.4em;
+}
+.search .x-hidden{
+    margin: 7px;
+    font-size: 1.4em;
 }

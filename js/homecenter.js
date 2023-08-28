@@ -35,6 +35,11 @@ containerAna.addEventListener("click",function(){
         containerChatAll.style.display = 'none';
     })
 })
+document.addEventListener("DOMContentLoaded", function() {
+    const closeIcon = document.getElementById('closeIcon');
+    const chatContainer = document.querySelector('.form-ana');
 
-
-    
+    closeIcon.addEventListener('click', () => {
+        chatContainer.style.display = 'none';
+    });
+});

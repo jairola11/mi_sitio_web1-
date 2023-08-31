@@ -45,73 +45,77 @@
         </div>
     </div>
 
-    <div class="form-ana">
-        <div class="form-header">
-            <img class="img-ana-I" src="img/homecenter/anaheader.PNG" alt="">
-            <div class="title-form">Homecenter</div>
-        </div>
-        <div class="form-body">
-            <div class="form-text">
-                <img class="img-ana-II" src="img/homecenter/anaheader.PNG" alt="">
-                <div class="text-opciones">
-                    Dime, ¿que quieres hacer?<br>Selecciona una opción👇
-                    <span class="finger-style icon-pointer"></span><br>
-                    <span class="text-form-black">Para ver mas opciones desliza<br> a la derecha➡️</span>
-                    <span class="reloj-msj">10:05 a.m.</span>
+    <div class="form-ana" id="formAna">
+        <div class="form-container">
+            <div class="form-header">
+                <img class="img-ana-I" src="img/Captura de pantalla 2023-08-17 095323.png" alt="">
+                <div class="title-form">Homecenter</div>
+            </div>
+            <div class="form-body">
+                <div class="form-text">
+                    <img class="img-ana-II" src="img/Captura de pantalla 2023-08-17 095323.png" alt="">
+                    <div class="text-opciones">Dime, ¿que quieres hacer?<br>Selecciona una opción👇
+                        <span class="finger-style icon-pointer"></span><br>
+                        <span class="text-form-black">Para ver mas opciones desliza<br> a la derecha➡️</span>
+                        <span class="reloj-msj">10:05 a.m.</span>
+                    </div>
                 </div>
                 <div class="icons-slider">
                     <div class="box-icon-arrow-left">
-                        <div class="icon-arrow-left"><i class="fa-solid fa-angle-left"></i></div>
+                        <div id="iconArrowLeft" class="icon-arrow-left"><i class="fa-solid fa-chevron-left"></i></div>
                     </div>
-                </div>
-                <div class="box-main-slider">
-                    <div class="slider">
-                        <div class="box-slider slider1">
-                            <span class="slider-title">Compra con un experto</span>
-                            <span class="slider-text">Compra aquí tus productos o servicios y alquila<br>
-                            tus herramientas con un experto</span>
-                            <span class="click-slider">Click aquí</span> 
+                    <div class="box-main-slider">
+                        <div id="idSlider" class="slider slider-view-1">
+                            <div class="box-slider slider1"><span class="slider-title">Compra con un experto</span>
+                                <span class="slider-text">Compra aquí tus productos o servicios y alquila<br>
+                                tus herramientas con un experto</span>
+                                <span class="click-slider">Click aquí</span> 
+                            </div>
+                            <div class="box-slider slider2"><span class="slider-title">Rastrea tu pedido</span>
+                                <span class="slider-text">Rastrea tus pedidos de homecenter</span>
+                                <span class="click-slider">Click aquí</span> 
+                            </div>
+                            <div class="box-slider slider3"><span class="slider-title">Agenda tu Instalacion</span>
+                                <span class="slider-text">Agenda tu servicio de instalacion o armado</span>
+                                <span class="click-slider">Click aquí</span></div>
+                            <div class="box-slider slider4"><span class="slider-title">Ayuda y mas Opciones</span>
+                                <span class="slider-text">Ana puede ayudarte con otras solicitudes</span>
+                                <span class="click-slider">Click aquí</span></div>
                         </div>
-                        <div class="box-slider slider2">Rastrea tu pedido</div>
-                        <div class="box-slider slider3">Agenda tu instalacion</div>
-                        <div class="box-slider slider4">Ayuda y mas opciones</div>
                     </div>
-                </div>
-                <div class="box-icon-arrow-right">
-                    <div class="icon-arrow-right"><i class="fa-solid fa-angle-right"></i></div>
+                    <div class="box-icon-arrow-right">
+                        <div id="iconArrowRight" class="icon-arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
                 </div>
                 <div class="num-slider">
                     <div class=""></div>
                 </div>
             </div>
+            <div class="form-btn">
+                <div id="boxBtn1" class="box-btn btn-select"></div>
+                <div id="boxBtn2" class="box-btn"></div>
+                <div id="boxBtn3" class="box-btn"></div>
+                <div id="boxBtn4" class="box-btn"></div>
+            </div>
+            <div class="form-input">
+                <input class="input-text" type="text" name="" id="" placeholder="Escribe aquí" autofocus>
+                <span class="icon-smile"><i class="fa-regular fa-face-smile-beam"></i></span>
+            </div>
         </div>
-        <div class="form-input">
-            <input class="input-text" type="text" name="" id="" placeholder="Escribe aquí" autofocus>
-            <span class="icon-smile"><i class="fa-regular fa-face-smile-beam"></i></span>
         </div>
         <div class="form-exit">
-            <span class="exit-style"><i class="exit-icon-style fa-solid fa-xmark"></i></span>
+            <img src="img/avatar-ana.png" alt="" width="120px" id="avatarAna">
+            <span class="exit-style" id="exitStyle"><i class="exit-icon-style fa-solid fa-xmark"></i></span>
         </div>
     </div>
-    
-    <div class="container-mobile">
-        <div id="containerMobile" class="mobile-menu">
-            <div class="first-mobile"></div>
-            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
-            <div class="logo-mobile"><img src="img/homecenter/Logo_header_mobile.webp" alt=""></div>
-            <div class="lupa"><i class="fa-solid fa-magnifying-glass" id="lupa"></i></div>
-            <div class="box shop"><div class="compra">0</div><p class="cart"><i class="fa-solid fa-cart-shopping"></i></p></div>
-            <div class="box user"><i class="fa-regular fa-user"></i>&nbsp;</div>
-        </div>
-    </div>
-    
     <div class="div-search">
         <div class="search" id="search">
             <div class="lupa-hidden"><i class="fa-solid fa-magnifying-glass" id="lupa"></i></div>
             <input type="text" class="busca" placeholder="¿Que estas pensando?">
             <div class="x-hidden" id="xHidden"><i class="fa-solid fa-xmark"></i></div>
-        </div>
+        </div>  
     </div>
+    
     <script src="/js/homecenter.js"></script>
 </body>
 </html>

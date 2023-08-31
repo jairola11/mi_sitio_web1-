@@ -676,18 +676,18 @@ input[type="text"]:focus {
     width: 4px;
     height: 4px;
     border-radius: 2px;
-    background-color: rgb(64,64,64);
+    background-color: rgb(48, 75, 228);
     margin-left: 8px;
     margin-right: 8px;
 }
-.btn-select {
+/* .btn-select {
     width: 6px;
     height: 6px;
     border-radius: 3px;
-    background-color: rgb(64,64,64);
+    background-color: rgb(49, 46, 238);
     margin-left: 8px;
     margin-right: 8px;
-}
+} */
 .form-input {
     grid-area: frm-input;
     background-color: rgb(234,238,243);

@@ -678,7 +678,7 @@ input[type="text"]:focus {
     border-radius: 2px;
     background-color: rgb(48, 75, 228);
     margin-left: 8px;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 /* .btn-select {
     width: 6px;

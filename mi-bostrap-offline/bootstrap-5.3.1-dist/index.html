@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+      <!-- formulario 1 -->
+    <h1 class="text-center">Formulario basico</h1>
+    <div class="container g-col-4 g-start-12" >
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <!-- formulario 2 -->
+        <h2>formulario select</h2>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>seleccione un municipio</option>
+            <option value="1">pitalito</option>
+            <option value="2">sanagustin</option>
+            <option value="3">isnos</option>
+          </select>
+    <!-- formulario 3 checked con ese comando el usuario puede selecionar varias a la misma vez si el solo puede selecionar una sola-->
+          <h2>formulario de dar clic en un punto</h2>
+          <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+   papa
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+  <label class="form-check-label" for="flexCheckChecked">
+    cebolla
+  </label>
+</div>
+
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+     cilantro
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+    <label class="form-check-label" for="flexCheckChecked">
+     tomate
+    </label>
+  </div>
+<h2>formulario </h2>
+<!-- este es para poder activar algo  -->
+<div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+  </div>
+      </div>
+    </div>
+      <!-- formulario 4 -->
+    <h1 class="text-center">formulario basico 2</h1>
+<div class="container">
+
+
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Default file input example</label>
+        <input class="form-control" type="file" id="formFile">
+      </div>
+      <div class="mb-3">
+        <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+        <input class="form-control" type="file" id="formFileMultiple" multiple>
+      </div>
+      <div class="mb-3">
+        <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+        <input class="form-control" type="file" id="formFileDisabled" disabled>
+      </div>
+      <div class="mb-3">
+        <label for="formFileSm" class="form-label">Small file input example</label>
+        <input class="form-control form-control-sm" id="formFileSm" type="file">
+      </div>
+      <div>
+        <label for="formFileLg" class="form-label">Large file input example</label>
+        <input class="form-control form-control-lg" id="formFileLg" type="file">
+      </div>
+</div>
+<h2 class="text-center">formulario basico3</h2>
+<div class="container">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="nombres">
+        <label for="floatingInput">nombre (s)</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingPassword" placeholder="nombres" aria-label="apellidos">
+        <label for="floatingPassword">apellido (s)</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingPassword" placeholder="email">
+        <label for="floatingPassword">correo electronico</label>
+      </div>
+      <div class="form-floating mb-3 ">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <br><br>
+      <h2>formulario 4</h2>
+      <div class="container">
+        <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+          </div>
+           <br><br><br>
+      </div>
+      <h2>validacion de formulario</h2>
+      <div class="container">
+      <form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationCustom01" value="Jairo" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" value="Lopez" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        ingree el nombre 
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">cuida</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+     ingrese la cuida valida 
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">departamento</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">selecione</option>
+      <option>huila</option>
+      <option>caqueta</option>
+      <option>cauca</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">enviar</button>
+  </div>
+  
+</form>
+</div>
+<div class="container">
+  <h2>validacion formulario 2 </h2>
+</div>
+<script src="js/validar form.js"> </script>
+</body>
+</html>

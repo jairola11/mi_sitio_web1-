@@ -1,0 +1,35 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+.box-example-colors{
+    width: 300px;
+    height: 300px;
+}
+.box-example-breakpoints{
+    height: 100px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.row{
+    border: 1px solid black;
+
+}
+.col-1{
+    border: 1px solid black;
+
+}
+.col-2{
+    border: 1px solid black;
+
+}
+.col-3{
+    border: 1px solid black;
+
+}

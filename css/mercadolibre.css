@@ -1,53 +1,125 @@
+
 *{
-    margin: 0%;
-    padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
 }
-.header{
-    background-color: yellow;
-    display: grid;
-    grid-template:  'empty-h    empty-h       empty-h'15px
-                    'logo        buscar       icons'50px
-                    'empty-b    empty-b       empty-b'15px/
-                    100px        1fr           120px;
-}
-.input-buscar{
+header{
     width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
+    display: grid;
+    grid-template:"logo box-input-busqueda carrito" 65px /
+                   50px 1fr                50px;
+                     background-color: rgb(255, 245, 8);
 }
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.icon-header{
+    font-size: 1.4em;
+    color: rgb(24, 24, 24);
+}
+.logo, .carrito{
     grid-area: logo;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
-.buscar{
-    font-size: 30px;
-    background-color: rgb(255, 255, 255);
-    grid-area: buscar;
-    border: 0.2px solid;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+.box-input-busqueda{
+    grid-area:box-input-busqueda ;
+    width: 100%;
+    padding: 15px;
 }
-.icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: icons;
+.input-busqueda{
+    width: 100%;
+    border-radius: 5px;
+border: none;
+height: 40px;
+outline: none;
+padding-left: 30px;
+font-size: 1.4em;
+color: rgb(48, 48, 48);
 }
-.logoMercado{
-    width: 70px;
-}
-.size-text-4{
-    font-size: 40px;
-    font-weight: 100;
-}
-.box-auto{
-    background-color: red;
-    width: 100vw;
-    height: 100px;
+.carrito{
+    grid-area: carrito;
 }
 
+.box-auto{
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    /* background-color: red; */
+    display: grid;
+    grid-template:"empty-left box-img box-info empty-right" 250px /
+                   20px       6fr     7fr      20px;
+}
+.box-img {
+    grid-area: box-img;
+    margin-top: 15px;
+}
+.box-info{
+    grid-area: box-info;
+    margin-left: 25px;
+}
+
+.img-auto {
+    width: 100%;
+}
+.info-marca{
+    display: flex;
+    flex-direction: row;
+}
+.txt-precio {
+    font-size: 1.6em;
+    font-weight: 400;
+}
+.txt-marca,.txt-modelo {
+    font-size: .9em;
+    margin-right: 10px;
+}
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-500italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }

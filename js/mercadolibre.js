@@ -9,7 +9,7 @@ class Automovil{
     }
 }
 
-let auto1 = new Automovil("Toyota","Prado 2.8 Tx-l", 200000000, 2021, "pitalito - Huila", 35900);
+let auto1 = new Automovil("Toyota","Fortuner 2.8l", 325000000, 2023, "Neiva - Huila", 7600 );
 
 let inputBusqueda = document.getElementById("inputBusqueda");
 
@@ -44,7 +44,7 @@ window.addEventListener("load", function(){
     let imgAuto = document.createElement("img");
     boxImg.appendChild(imgAuto);
     boxImg.setAttribute("class", "box-img");
-    imgAuto.setAttribute("src", "img/Toyota Prado Tx-l 3.0.jpeg")
+    imgAuto.setAttribute("src", "img/toyota_fortuner.jpg")
     imgAuto.setAttribute("class", "img-auto");
 
 

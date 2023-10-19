@@ -55,19 +55,19 @@ nav{
 /* ESTILOS PRINCIPALES */
 .main-container{
     display: grid;
-    gap: 5rem;
+    /* gap: 2rem; */
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     max-height: 750px;
 }
 .main-blog{
     grid-column: 2 span;
-    grid-row: 1 span;
+    grid-row: 3rem;
 }
 .blog-info{
     display: flex;
     justify-content: space-between;
-    margin-top: 3rem;
+ 
 }
 .blog-title{
     font-size: 3rem;
@@ -82,7 +82,7 @@ nav{
 .blog-read{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .blog-read button{
     background-color:  rgb(123, 33, 25);
@@ -124,7 +124,7 @@ nav{
     gap: 1rem;
 }
 .new-blog::after{
-    content: "";
+    /* content: ""; */
     margin-top: 2rem;
     display: flex;
     width: 100%;

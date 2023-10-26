@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+body{
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+.container{
+  background-image: url(../img/google.jpg);
+  height: 87.5vh;
+  width: 80vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-spiderman{
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 56%;
+  left: 78%;
+  cursor: pointer;
+}
+.spiderman{
+  width: 200px;
+  margin: 0 auto;
+  position: absolute;
+  display: none;
+  z-index: 999;
+  top: -20%;
+  animation: spiderman   5s infinite;
+}
+@keyframes spiderman{
+  0%{
+    transform: translateY(-50px);
+  }
+  30%{
+    transform: translateY(0) rotate(5deg)
+  }
+  50%{
+    transform:  rotate(-5deg)
+  }
+  75%{
+    transform:  rotate(5deg)
+  }
+  100%{
+    transform:  rotate(-50px)
+  }
+}
+.spiderman2{
+  width: 200px;
+  margin: 0 auto;
+  position: absolute ;
+  z-index: 999;
+  bottom: 260%;
+  animation: spiderman   5s infinite;
+}
+.input{
+  position: absolute;
+  top: 57%;
+  left: 29%;
+}
+.input input{
+  height: 50px;
+  outline: none;
+  border: none;
+   width:100%;
+   font-size: 2em;
+}

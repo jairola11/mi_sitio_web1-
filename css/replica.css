@@ -1,12 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
-/* :root{
-    --Soft-orange: rgb(233, 171, 83);
-    --Soft-red: rgb(123, 33, 25);
-    --Off-white: rgb(255, 253, 250);
-    --Grayish-blue: rgb(197, 198, 206);
-    --Dark-grayish-blue: rgb(93, 95, 121);
-    --Very-dark-blue: rgb(0, 0, 26);
-} */
 /* ESTILOS POR DEFECTO */
 *{
     font-family: 'Inter', sans-serif;

@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing:border-box;
+  /* overflow-x: hidden; */
 }
 body{
   overflow-y: hidden;
@@ -24,8 +25,10 @@ body{
   top: 56%;
   left: 78%;
   cursor: pointer;
+  transition: all 1s ease;
 }
-.spiderman{
+.spiderman{  
+  left: 5px;
   width: 200px;
   margin: 0 auto;
   position: absolute;
@@ -33,6 +36,7 @@ body{
   z-index: 999;
   top: -20%;
   animation: spiderman   5s infinite;
+  transition: all 1s ease;
 }
 @keyframes spiderman{
   0%{
@@ -52,12 +56,14 @@ body{
   }
 }
 .spiderman2{
+  left: 5px;
   width: 200px;
   margin: 0 auto;
   position: absolute ;
   z-index: 999;
   bottom: 260%;
   animation: spiderman   5s infinite;
+  transition: all 1s ease;
 }
 .input{
   position: absolute;

@@ -2,10 +2,16 @@ let spiderman = document.getElementById('showSpiderman');
 let input = document.querySelector('input');
 let position = 5;
 
+let sonido = new Audio("/audio/ringtones-spiderman3.mp3")
+function sonidoSpider() {
+  sonido.play()
+}
+
 input.addEventListener('keyup', (e) => {
-  if (input.value.toLowerCase() === 'man') {
+  if (input.value.toLowerCase() === 'spiderman') {
     if (e.key === "ArrowLeft") {
       position -= 3;
+      sonidoSpider()
     } else if (e.key === "ArrowRight") {
       position += 3;
     }

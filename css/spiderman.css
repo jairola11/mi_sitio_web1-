@@ -62,7 +62,7 @@ body{
   position: absolute ;
   z-index: 999;
   bottom: 260%;
-  animation: spiderman   5s infinite;
+  animation: spiderman 5s infinite;
   transition: all 1s ease;
 }
 .input{

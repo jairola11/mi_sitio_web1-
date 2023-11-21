@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>star</title>
+    <link rel="stylesheet" href="/css/star.css">
+</head>
+<body>
+    <div class="container">
+        <div class="star-container">
+            <div class="star" id="stars" data-rating="1">&#9733;</div>
+            <div class="star" id="stars" data-rating="2">&#9733;</div>
+            <div class="star" id="stars" data-rating="3">&#9733;</div>
+            <div class="star" id="stars" data-rating="4">&#9733;</div>
+            <div class="star" id="stars" data-rating="5">&#9733;</div>
+        </div>
+        <div class="img-play">
+            <img src="img/gta5.jpg" alt="imagePrin">
+        </div>
+        <div class="box-valor">
+            <p class="text-value">Cuantas estrellas le das a este juego?</p>
+            <input type="text" name="valor" id="valor" min="0" max="5" step="0.1">
+            <input type="button" value="enviar" id="btnSend">
+        </div>
+        <div class="message">
+            <p class="text-message" id="textMessage"></p>
+        </div>
+    </div>
+</body>
+    <script src="/js/star.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

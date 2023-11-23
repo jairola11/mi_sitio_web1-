@@ -9,6 +9,7 @@ function sonidoSpider() {
 
 input.addEventListener('keyup', (e) => {
   if (input.value.toLowerCase() === 'spiderman') {
+    sonidoSpider()
     if (e.key === "ArrowLeft") {
       position -= 3;
       sonidoSpider()

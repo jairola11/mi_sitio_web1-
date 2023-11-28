@@ -1,47 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/calificacion.css">
-  <title>valor de Estrellas </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valorar Producto</title>
+    <link rel="stylesheet" href="style/css/starCalculator.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="insert-valor">
-      <label for="input1"></label>
-      <input type="number">
-      <label for="input2"> puntuacion 2</label>
-      <input type="number2">
-      <label for="input3"> puntuacion 3</label>
-      <input type="number3">
-      <label for="input4"> puntuacion 4</label>
-      <input type="number4">
-      <label for="input5"> puntuacion 5</label>
-      <input type="number5" id="input5">
-      <input class="button" type="button" value="send" id="btnSend">
-    </div>
-    <div grafica_container>
-      <div class="grafica_value">
-        <progress value="80" max="100"></progress>
-      </div>
-      <div class="grafica_value2">
-        <progress value="80" max="100"></progress>
-      </div>
-      <div class="grafica_value3">
-        <progress value="80" max="100"></progress>
-      </div>
-      <div class="grafica_value4">
-        <progress value="80" max="100"></progress>
-      </div>
-      <div class="grafica_value5">
-        <progress value="80" max="100"></progress>
-      </div>
+    <div class="container">
+        <div class="inert-value1">
+            <label for="input1">5 estrellas</label>
+            <input type="number" name="input1" id="input1" value="0">
+            <label for="input2">4 estrellas</label>
+            <input type="number" name="input2" id="input2" value="0">
+            <label for="input3">3 estrellas</label>
+            <input type="number" name="input3" id="input3" value="0">
+            <label for="input4">2 estrellas</label>
+            <input type="number" name="input4" id="input4" value="0">
+            <label for="input5">1 estrella</label>
+            <input type="number" name="input5" id="input5" value="0">
+            <input type="button" value="send" id="btnSend">
 
+            <div class="star-container">
+                <div class="star" id="stars" data-rating="1">&#9733;</div>
+                <div class="star" id="stars" data-rating="2">&#9733;</div>
+                <div class="star" id="stars" data-rating="3">&#9733;</div>
+                <div class="star" id="stars" data-rating="4">&#9733;</div>
+                <div class="star" id="stars" data-rating="5">&#9733;</div>
+            </div>
+
+        </div>
+        <div class="graphic-container">
+            <div class="graphic-value1">
+                <p class="txt-star">5 Estrellas</p>
+                <progress class="progress-bar" value="0" max="100" id="graphic1"></progress>
+                    <p id="text1"></p>
+            </div>
+            <div class="graphic-value2">
+                <p class="txt-star">4 Estrellas</p>
+                <progress class="progress-bar" value="0" max="100" id="graphic2"></progress>
+                    <p id="text2"></p>
+            </div>
+            <div class="graphic-value3">
+                <p class="txt-star">3 Estrellas</p>
+                <progress class="progress-bar" value="0" max="100" id="graphic3"></progress>
+                    <p id="text3"></p>
+            </div>
+            <div class="graphic-value4">
+                <p class="txt-star">2 Estrellas</p>
+                <progress class="progress-bar" value="0" max="100" id="graphic4"></progress>
+                    <p id="text4"></p>
+            </div>
+            <div class="graphic-value5">
+                <p class="txt-star">1 Estrellas</p>
+                <progress class="progress-bar" value="0" max="100" id="graphic5"></progress>
+                    <p id="text5"></p>
+            </div>
+        </div>
     </div>
-  </div>
 </body>
-
+<script src="js/starCalcualtor/starCalculator.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>

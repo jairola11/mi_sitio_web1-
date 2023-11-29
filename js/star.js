@@ -26,11 +26,11 @@ function updateStar(valueStar) {
     const decimalStar = Math.round((valueStar - completStar) * 10);
 
     if (completStar < 1) {
-        Swal.fire({
-            icon: 'info',
-            title: '¡Ups!',
-            text: 'Parece que no estás seguro. ¡Prueba de nuevo!',
-        });
+            Swal.fire({
+                icon: 'info',
+                title: '¡Ups!',
+                text: 'Parece que no estás seguro. ¡Prueba de nuevo!',
+            });
     } else if (completStar >= 1 && completStar < 3) {
         Swal.fire({
             icon: 'error',

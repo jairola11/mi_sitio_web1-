@@ -86,45 +86,45 @@ function updateStar(valueStar) {
 
 
     if (completStar < 20) {
-        Swal.fire({
-            icon: 'info',
-            title: '¡Ups!',
-            text: 'Parece que no estás seguro. ¡Prueba de nuevo!',
-        });
+        // Swal.fire({
+        //     icon: 'info',
+        //     title: '¡Ups!',
+        //     text: 'Parece que no estás seguro. ¡Prueba de nuevo!',
+        // });
     } else if (completStar >= 20 && completStar < 60) {
-        Swal.fire({
-            icon: 'error',
-            title: '¡Oh no!',
-            text: 'Tu opinión es valiosa, pero es una puntuación baja.',
-        });
+        // Swal.fire({
+        //     icon: 'error',
+        //     title: '¡Oh no!',
+        //     text: 'Tu opinión es valiosa, pero es una puntuación baja.',
+        // });
     } else if (completStar >= 60 && completStar < 80) {
         let timerInterval
-        Swal.fire({
-            icon: 'info',
-            title: '¡Sigues mejorando!',
-            text: 'Tu evaluación está en un buen camino.',
-            timer: 2000,
-            timerProgressBar: true,
-            showConfirmButton: false,
-        });
+        // Swal.fire({
+        //     icon: 'info',
+        //     title: '¡Sigues mejorando!',
+        //     text: 'Tu evaluación está en un buen camino.',
+        //     timer: 2000,
+        //     timerProgressBar: true,
+        //     showConfirmButton: false,
+        // });
     } else if (completStar >= 80 && completStar < 100) {
         if (decimalStar < 80) {
             Swal.fire('Vas por buen camino')
         } else {
-            Swal.fire({
-                icon: 'info',
-                title: '¡Casi perfecto!',
-                text: 'Continúa así, te acercas mucho.',
-            });
+            // Swal.fire({
+            //     icon: 'info',
+            //     title: '¡Casi perfecto!',
+            //     text: 'Continúa así, te acercas mucho.',
+            // });
         }
     } else if (completStar == 100) {
-        Swal.fire({
-            icon: 'success',
-            title: '¡Eres increíble!',
-            text: 'Gracias por la máxima puntuación. ¡Eres genial!',
-            showConfirmButton: false,
-            timer: 1500,
-        });
+        // Swal.fire({
+        //     icon: 'success',
+        //     title: '¡Eres increíble!',
+        //     text: 'Gracias por la máxima puntuación. ¡Eres genial!',
+        //     showConfirmButton: false,
+        //     timer: 1500,
+        // });
     }
     stars.forEach((star, index) => {
         const fullStar = star.getAttribute('data-rating');

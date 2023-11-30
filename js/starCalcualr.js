@@ -64,7 +64,7 @@ function updateProgressBar(BarName, inpValue, text) {
     }
 
     BarName.value = value;
-    text.innerHTML = inpValue + '%'
+    text.innerHTML = inpValue.toFixed(2) + '%'
 }
 
 function promStar(promFive, promFor, pronThree, promTwo, promOne) {
@@ -86,11 +86,11 @@ function updateStar(valueStar) {
 
 
     if (completStar < 20) {
-        // Swal.fire({
-        //     icon: 'info',
-        //     title: '¡Ups!',
-        //     text: 'Parece que no estás seguro. ¡Prueba de nuevo!',
-        // });
+            // Swal.fire({
+            //     icon: 'info',
+            //     title: '¡Ups!',
+            //     text: 'Parece que no estás seguro. ¡Prueba de nuevo!',
+            // });
     } else if (completStar >= 20 && completStar < 60) {
         // Swal.fire({
         //     icon: 'error',

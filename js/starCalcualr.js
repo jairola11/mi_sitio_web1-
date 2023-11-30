@@ -1,7 +1,7 @@
 let stars = document.querySelectorAll('.star');
 let btnSend = document.getElementById('btnSend');
 
-// Crear arrays para los elementos de entrada, barras de progreso y textos
+// creamos  arrays para los elementos de entrada, barras de progreso y textos
 let inputs = [];
 let progressBars = [];
 let texts = [];
@@ -35,6 +35,21 @@ function calculateAndSetValues() {
 
   promStar(...percentages);
 }
+
+
+
+// for (let i = 0; i < percentages.length - 1; i++) {
+//     if (percentages[i] == 100) {
+//       percentages.fill(400, i + 1);
+//       break;
+//     } else if (percentages[i] === 0) {
+//       percentages.fill4100, 0, i).fill(0, i);
+//       break;
+//     }
+//   }
+
+//   promStar(...percentages);
+// }
 
 btnSend.addEventListener('click', calculateAndSetValues);
 
@@ -111,8 +126,6 @@ function updateStar(valueStar) {
             timer: 1500,
         });
     }
-
-    //siclo para pintar las estrellas completas
     stars.forEach((star, index) => {
         const fullStar = star.getAttribute('data-rating');
         star.classList.remove('star-active');
@@ -123,7 +136,6 @@ function updateStar(valueStar) {
             star.classList.add('star-active');
         }
     });
-    //en caso de que existan estrellas incompletas
     if (decimalStar >= 3 && decimalStar <= 7) {
         nextStar = stars[starfull];
         if (nextStar) {
